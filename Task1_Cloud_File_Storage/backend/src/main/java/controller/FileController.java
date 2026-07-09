@@ -15,6 +15,7 @@ import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/api/files")
+@CrossOrigin(origins = "http://localhost:5173")
 public class FileController {
 
     private final Path uploadPath = Paths.get("uploads");
