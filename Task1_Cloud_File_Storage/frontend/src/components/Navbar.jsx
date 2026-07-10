@@ -14,9 +14,11 @@ function Navbar() {
       </div>
 
       <ul className="nav-links">
-        <li><a href="#">Dashboard</a></li>
-        <li><a href="#">My Files</a></li>
-        <li><a href="#">About</a></li>
+        <li><a href="#dashboard">Dashboard</a></li>
+
+<li><a href="#files">My Files</a></li>
+
+<li><a href="#about">About</a></li>
       </ul>
 
       <div className="nav-right">

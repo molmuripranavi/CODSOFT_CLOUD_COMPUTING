@@ -94,9 +94,13 @@ toast.error("Upload failed!");
   return (
     <div className="upload-container">
 
-      <h2>Upload Files</h2>
-
-      <p>Upload one or multiple files securely.</p>
+      <div className="upload-header">
+  <h2>Upload Your Files</h2>
+  <p>
+    Drag & drop your documents or browse from your device.
+    Supports PDF, DOCX, Images, Videos and ZIP files.
+  </p>
+</div>
 
       <div
         className={`drop-zone ${dragActive ? "active" : ""}`}
@@ -106,7 +110,21 @@ toast.error("Upload failed!");
       >
         <FaCloudUploadAlt className="upload-icon" />
 
-        <h3>Drag & Drop Files Here</h3>
+        <div className="supported-files">
+
+  <span>PDF</span>
+
+  <span>DOCX</span>
+
+  <span>JPG</span>
+
+  <span>PNG</span>
+
+  <span>ZIP</span>
+
+  <span>MP4</span>
+
+</div>
 
         <p>or</p>
 

@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Dashboard from "./components/Dashboard";
@@ -6,9 +5,11 @@ import UploadFile from "./components/UploadFile";
 import SearchBar from "./components/SearchBar";
 import FileList from "./components/FileList";
 import { ToastContainer } from "react-toastify";
-
+import { useState} from "react";
 import "react-toastify/dist/ReactToastify.css";
 import "./App.css";
+import Footer from "./components/Footer";
+
 
 function App() {
   // Refresh uploaded files
@@ -34,52 +35,51 @@ function App() {
   };
 
   return (
-    <>
-      <Navbar />
+  <div>
 
-      <Hero />
+    <Navbar />
 
-      <div className="container">
+    <Hero />
 
-        {/* Dashboard */}
-        <Dashboard
-          totalFiles={totalFiles}
-          storageInfo={storageInfo}
-        />
+    <div className="container">
+      
 
-        {/* Upload */}
-        <UploadFile
-          refreshFiles={refreshFiles}
-        />
-
-        {/* Search */}
-        <SearchBar
-  search={search}
-  setSearch={setSearch}
-  filter={filter}
-  setFilter={setFilter}
-/>
-
-        {/* File List */}
-        <FileList
-  refresh={refresh}
-  search={search}
-  filter={filter}
-  setTotalFiles={setTotalFiles}
-  setStorageInfo={setStorageInfo}
-/>
-
-      </div>
-
-      <ToastContainer
-        position="top-right"
-        autoClose={2500}
-        newestOnTop
-        closeOnClick
-        pauseOnHover
+      <Dashboard
+        totalFiles={totalFiles}
+        storageInfo={storageInfo}
       />
-    </>
-  );
+
+      <UploadFile
+        refreshFiles={refreshFiles}
+      />
+
+      <SearchBar
+        search={search}
+        setSearch={setSearch}
+        filter={filter}
+        setFilter={setFilter}
+      />
+
+      <FileList
+        refresh={refresh}
+        search={search}
+        filter={filter}
+        setTotalFiles={setTotalFiles}
+        setStorageInfo={setStorageInfo}
+      />
+
+    </div>
+     <Footer />
+    <ToastContainer
+      position="top-right"
+      autoClose={2500}
+      newestOnTop
+      closeOnClick
+      pauseOnHover
+    />
+
+  </div>
+);
 }
 
 export default App;

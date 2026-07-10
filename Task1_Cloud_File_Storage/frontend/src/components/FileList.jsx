@@ -23,21 +23,27 @@ function FileList({
   setStorageInfo,
 }) {
   const [files, setFiles] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   // Fetch Files
   const fetchFiles = async () => {
-    try {
-      const response = await API.get("");
+  try {
+    setLoading(true);
 
-      setFiles(response.data);
-      setTotalFiles(response.data.length);
+    const response = await API.get("");
 
-      const storageResponse = await API.get("/storage");
-      setStorageInfo(storageResponse.data);
-    } catch (error) {
-      console.error(error);
-    }
-  };
+    setFiles(response.data);
+    setTotalFiles(response.data.length);
+
+    const storageResponse = await API.get("/storage");
+    setStorageInfo(storageResponse.data);
+
+  } catch (error) {
+    console.error(error);
+  } finally {
+    setLoading(false);
+  }
+};
 
   useEffect(() => {
     fetchFiles();
@@ -159,77 +165,121 @@ function FileList({
         return <FaFileAlt color="#6b7280" size={24} />;
     }
   };
-
+  if (loading) {
   return (
-    <div className="file-list">
-      <h2>Uploaded Files</h2>
-      <p>Manage all your uploaded files securely.</p>
-
-      {filteredFiles.length === 0 ? (
-        <p>No files found.</p>
-      ) : (
-        <table className="file-table">
-          <thead>
-            <tr>
-              <th>File</th>
-              <th>Type</th>
-              <th>Size</th>
-              <th>Date</th>
-              <th>Download</th>
-              <th>Delete</th>
-            </tr>
-          </thead>
-
-          <tbody>
-            {filteredFiles.map((file, index) => (
-              <tr key={index}>
-                <td>
-                  <div
-                    style={{
-                      display: "flex",
-                      alignItems: "center",
-                      gap: "12px",
-                    }}
-                  >
-                    {getFileIcon(file.name)}
-                    {file.name}
-                  </div>
-                </td>
-
-                <td>{file.type}</td>
-
-                <td>{file.size}</td>
-
-                <td>{file.uploadedDate}</td>
-
-                <td>
-                  <button
-                    className="download-btn"
-                    onClick={() =>
-                      handleDownload(file.name)
-                    }
-                  >
-                    <FaDownload /> Download
-                  </button>
-                </td>
-
-                <td>
-                  <button
-                    className="delete-btn"
-                    onClick={() =>
-                      handleDelete(file.name)
-                    }
-                  >
-                    <FaTrash /> Delete
-                  </button>
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      )}
+    <div className="loading">
+      <div className="loader"></div>
+      <h3>Loading Files...</h3>
     </div>
   );
+}
+
+ return (
+  <div className="file-list">
+
+    <h2>My Files</h2>
+
+    <p>
+      Securely manage all uploaded files.
+    </p>
+
+    {filteredFiles.length === 0 ? (
+
+      <div className="empty-state">
+
+        <h3>📂 No Files Found</h3>
+
+        <p>
+          Upload your first file to get started.
+        </p>
+
+      </div>
+
+    ) : (
+
+      <div className="file-grid">
+
+        {filteredFiles.map((file,index)=>(
+
+          <div
+            className="file-card"
+            key={index}
+          >
+
+            <div className="file-header">
+
+              <div className="file-icon">
+
+                {getFileIcon(file.name)}
+
+              </div>
+
+              <div className="file-info">
+  <h3 title={file.name}>
+    {file.name}
+  </h3>
+
+  <p>{file.type}</p>
+</div>
+
+            </div>
+
+            <div className="file-size">
+
+              📦 {file.size}
+
+            </div>
+
+            <div className="file-date">
+
+              📅 {file.uploadedDate}
+
+            </div>
+
+            <div className="file-actions">
+
+              <button
+                className="download-btn"
+                onClick={()=>
+                  handleDownload(file.name)
+                }
+              >
+                <FaDownload/>
+              </button>
+
+              <button
+                className="view-btn"
+                onClick={()=>
+                  window.open(
+                    `http://localhost:8080/api/files/view/${file.name}`,
+                    "_blank"
+                  )
+                }
+              >
+                View
+              </button>
+
+              <button
+                className="delete-btn"
+                onClick={()=>
+                  handleDelete(file.name)
+                }
+              >
+                <FaTrash/>
+              </button>
+
+            </div>
+
+          </div>
+
+        ))}
+
+      </div>
+
+    )}
+
+  </div>
+);
 }
 
 export default FileList;

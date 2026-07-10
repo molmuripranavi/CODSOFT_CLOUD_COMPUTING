@@ -4,7 +4,7 @@ import {
   FaCloud,
   FaUpload,
 } from "react-icons/fa";
-
+<section id="dashboard" className="dashboard-section"></section>
 function Dashboard({ totalFiles = 0, storageInfo }) {
   return (
     <section className="dashboard-section">

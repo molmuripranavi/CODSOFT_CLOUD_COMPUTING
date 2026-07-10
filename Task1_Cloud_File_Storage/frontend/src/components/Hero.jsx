@@ -1,8 +1,10 @@
 import { motion } from "framer-motion";
 import {
   FaCloudUploadAlt,
-  FaLock,
-  FaBolt
+  FaGithub,
+  FaShieldAlt,
+  FaRocket,
+  FaDatabase
 } from "react-icons/fa";
 
 function Hero() {
@@ -11,20 +13,27 @@ function Hero() {
 
       <motion.div
         className="hero-left"
-        initial={{ x: -80, opacity: 0 }}
-        animate={{ x: 0, opacity: 1 }}
-        transition={{ duration: .8 }}
+        initial={{ opacity: 0, x: -70 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8 }}
       >
+        <span className="hero-tag">
+          🚀 Cloud Storage Platform
+        </span>
 
         <h1>
-          Secure Cloud
-          <span> File Storage</span>
+          Store.
+          <br />
+          Manage.
+          <br />
+          <span>Access Anywhere.</span>
         </h1>
 
         <p>
-          Store, organize, upload and manage your files
-          securely from anywhere with a fast and modern
-          cloud storage platform.
+          CloudVault Pro is a modern cloud storage application
+          built using Spring Boot and React. Upload, preview,
+          download and organize your files securely through an
+          elegant dashboard.
         </p>
 
         <div className="hero-buttons">
@@ -34,8 +43,17 @@ function Hero() {
             Upload Files
           </button>
 
-          <button className="secondary-btn">
-            Learn More
+          <button
+            className="secondary-btn"
+            onClick={() =>
+              window.open(
+                "https://github.com/yourusername",
+                "_blank"
+              )
+            }
+          >
+            <FaGithub />
+            GitHub
           </button>
 
         </div>
@@ -43,17 +61,18 @@ function Hero() {
         <div className="hero-features">
 
           <div>
-            <FaLock />
-            Secure
+            <FaShieldAlt />
+            Secure Storage
           </div>
 
           <div>
-            <FaBolt />
-            Fast
+            <FaRocket />
+            Lightning Fast
           </div>
 
           <div>
-            ☁ Reliable
+            <FaDatabase />
+            Unlimited Files
           </div>
 
         </div>
@@ -62,14 +81,14 @@ function Hero() {
 
       <motion.div
         className="hero-right"
-        initial={{ x: 80, opacity: 0 }}
-        animate={{ x: 0, opacity: 1 }}
-        transition={{ duration: .8 }}
+        initial={{ opacity: 0, scale: .6 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1 }}
       >
 
-        <div className="floating-cloud">
+        <div className="hero-cloud">
 
-            ☁
+          ☁️
 
         </div>
 
