@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">EduCloud</string>
+
+    <string name="default_web_client_id">
+        712283775148-a76lfc9eufjralng4j1k3nb0dnf0kk71.apps.googleusercontent.com
+    </string>
 </resources>
