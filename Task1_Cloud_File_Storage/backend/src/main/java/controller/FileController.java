@@ -271,4 +271,8 @@ public ResponseEntity<Resource> viewFile(
             .contentType(mediaType)
             .body(resource);
 }
+@GetMapping("/test")
+public String test() {
+    return "Backend Updated";
+}
 }
