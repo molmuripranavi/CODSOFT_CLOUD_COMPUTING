@@ -1,9 +1,18 @@
 # ☁️ Cloud File Storage Backend
 
 A RESTful Cloud File Storage Backend developed using **Spring Boot**. This application allows users to upload, list, download, and delete files through REST APIs. Uploaded files are stored locally in the `uploads` directory.
+## 🔗 Live Links
+- 🌐 Frontend: https://codsoft-cloud-computing-h15blvs31-molmuripranavis-projects.vercel.app
+- ⚙️ Backend API: https://codsoft-cloud-computing.onrender.com
 
 ---
 
+![Java](https://img.shields.io/badge/Java-17-orange)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-3.x-brightgreen)
+![MySQL](https://img.shields.io/badge/MySQL-8-blue)
+![React](https://img.shields.io/badge/React-19-61DAFB)
+![Render](https://img.shields.io/badge/Backend-Render-blueviolet)
+![Vercel](https://img.shields.io/badge/Frontend-Vercel-black)
 ## 📖 Overview
 
 This project provides a simple file management system where users can:
@@ -19,13 +28,18 @@ The backend is built using Spring Boot and tested using Postman.
 
 ## ✨ Features
 
-- 📤 Upload files
-- 📋 List all uploaded files
+- 📤 Upload multiple files
+- 📋 View uploaded files
 - 📥 Download files
+- 👁️ Preview supported files
 - 🗑️ Delete files
-- 📁 Automatic creation of the uploads folder
+- 🔍 Search files
+- 📂 Filter files by type
+- 📊 Storage dashboard
+- 📁 Automatic uploads folder creation
 - ⚡ RESTful APIs
-- 💾 MySQL database connectivity
+- 💾 MySQL Integration
+- 🌐 Deployed on Render & Vercel
 
 ---
 
@@ -60,6 +74,19 @@ backend
 ├── uploads
 ├── pom.xml
 └── mvnw.cmd
+```
+
+## 🏗️ System Architecture
+
+```
+React Frontend (Vercel)
+        │
+        │ Axios REST API
+        ▼
+Spring Boot Backend (Render)
+        │
+        ▼
+      MySQL Database
 ```
 
 ---
@@ -128,10 +155,12 @@ http://localhost:8080
 
 | Method | Endpoint | Description |
 |---------|----------|-------------|
-| POST | `/api/files/upload` | Upload file(s) |
-| GET | `/api/files` | List uploaded files |
-| GET | `/api/files/download/{filename}` | Download a file |
-| DELETE | `/api/files/{filename}` | Delete a file |
+| POST | `/api/files/upload` | Upload files |
+| GET | `/api/files` | List files |
+| GET | `/api/files/storage` | Storage statistics |
+| GET | `/api/files/view/{filename}` | Preview file |
+| GET | `/api/files/download/{filename}` | Download file |
+| DELETE | `/api/files/{filename}` | Delete file |
 
 ---
 
@@ -267,6 +296,13 @@ Add screenshots of:
   <img width="1365" height="678" alt="image" src="https://github.com/user-attachments/assets/177b1022-0817-4342-a740-8d5722d38727" />
 ---
 
+# ☁️ Deployment
+
+| Service | Platform |
+|----------|----------|
+| Frontend | Vercel |
+| Backend | Render |
+| Database | MySQL |
 ## 👩‍💻 Author
 
 **Molmuri Pranavi**
@@ -276,16 +312,16 @@ Add screenshots of:
 - GitHub: https://github.com/molmuripranavi
 ---
 
-## 🚀 Future Enhancements
+## 🚀 Future Scope
 
-- User Authentication (JWT)
-- Cloud Storage Integration (AWS S3 / Azure Blob Storage)
-- File Size Validation
-- File Type Validation
-- Search Files by Name
-- Docker Support
-- Deploy Backend on Render
----
+- JWT Authentication
+- AWS S3 Integration
+- Azure Blob Storage
+- Cloudinary Integration
+- Role-based Access Control
+- File Sharing using Secure Links
+- Docker & Kubernetes Deployment
+- Email Notifications
 # 📄 License
 
 This project was developed for educational purposes as part of the **CodSoft Cloud Computing Internship**.
