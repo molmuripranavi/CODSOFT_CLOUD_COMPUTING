@@ -14,6 +14,7 @@ import {
   FaDownload,
   FaTrash,
 } from "react-icons/fa";
+const BASE_URL = import.meta.env.VITE_API_URL;
 
 function FileList({
   refresh,
@@ -89,12 +90,13 @@ function FileList({
   });
 
   // Download
-  const handleDownload = (filename) => {
-    window.open(
-      `http://localhost:8080/api/files/download/${filename}`,
-      "_blank"
-    );
-  };
+  // Download
+const handleDownload = (filename) => {
+  window.open(
+    `${BASE_URL}/download/${encodeURIComponent(filename)}`,
+    "_blank"
+  );
+};
 
   // Delete
   const handleDelete = async (filename) => {
@@ -248,16 +250,16 @@ function FileList({
               </button>
 
               <button
-                className="view-btn"
-                onClick={()=>
-                  window.open(
-                    `http://localhost:8080/api/files/view/${file.name}`,
-                    "_blank"
-                  )
-                }
-              >
-                View
-              </button>
+  className="view-btn"
+  onClick={() =>
+    window.open(
+      `${BASE_URL}/view/${encodeURIComponent(file.name)}`,
+      "_blank"
+    )
+  }
+>
+  View
+</button>
 
               <button
                 className="delete-btn"
