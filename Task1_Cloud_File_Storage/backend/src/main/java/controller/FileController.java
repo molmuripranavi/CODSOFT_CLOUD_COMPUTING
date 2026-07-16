@@ -26,7 +26,7 @@ import com.codesoft.cloud_file_storage.dto.StorageInfo;
 @RequestMapping("/api/files")
 @CrossOrigin(origins = {
     "http://localhost:5173",
-    "https://your-project.vercel.app"
+    "https://codsoft-cloud-computing-bbrtagwud-molmuripranavis-projects.vercel.app"
 })
 public class FileController {
 
