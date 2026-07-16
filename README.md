@@ -322,6 +322,3 @@ Add screenshots of:
 - File Sharing using Secure Links
 - Docker & Kubernetes Deployment
 - Email Notifications
-# 📄 License
-
-This project was developed for educational purposes as part of the **CodSoft Cloud Computing Internship**.
