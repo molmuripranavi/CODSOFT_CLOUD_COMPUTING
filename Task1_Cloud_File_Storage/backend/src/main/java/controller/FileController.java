@@ -24,10 +24,6 @@ import com.codesoft.cloud_file_storage.dto.StorageInfo;
 
 @RestController
 @RequestMapping("/api/files")
-@CrossOrigin(origins = {
-    "http://localhost:5173",
-    "https://codsoft-cloud-computing-bbrtagwud-molmuripranavis-projects.vercel.app"
-})
 public class FileController {
 
     private final Path uploadPath = Paths.get("uploads");
