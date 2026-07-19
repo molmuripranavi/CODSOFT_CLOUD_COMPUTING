@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "712283775148",
+    "project_id": "educloud-9e013",
+    "storage_bucket": "educloud-9e013.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:712283775148:android:5f33890ed1d59665643f09",
+        "android_client_info": {
+          "package_name": "com.molmuripranavi.educloud"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "712283775148-rgu6cljk2si7gnf25h167clpjpg87n3p.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.molmuripranavi.educloud",
+            "certificate_hash": "f9ea10fca1b16687b83007c1d719202a65f949a4"
+          }
+        },
+        {
+          "client_id": "712283775148-a76lfc9eufjralng4j1k3nb0dnf0kk71.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCu2GKalbSkCi8iLytYv74fmZNMCjyUpXs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "712283775148-a76lfc9eufjralng4j1k3nb0dnf0kk71.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
