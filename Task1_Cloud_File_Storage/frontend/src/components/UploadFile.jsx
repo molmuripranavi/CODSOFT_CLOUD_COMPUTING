@@ -51,7 +51,7 @@ function UploadFile({ refreshFiles }) {
       setUploading(true);
 setProgress(0);
 
-const response = await API.post("/upload", formData, {
+const response = await API.post("upload", formData, {
   onUploadProgress: (progressEvent) => {
     const percentCompleted = Math.round(
       (progressEvent.loaded * 100) / progressEvent.total

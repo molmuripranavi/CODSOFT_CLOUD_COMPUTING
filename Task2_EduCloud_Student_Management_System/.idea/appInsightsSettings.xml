@@ -8,10 +8,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="PLACEHOLDER" />
-                  <option name="mobileSdkAppId" value="" />
-                  <option name="projectId" value="" />
-                  <option name="projectNumber" value="" />
+                  <option name="appId" value="com.molmuripranavi.educloud" />
+                  <option name="mobileSdkAppId" value="1:712283775148:android:5f33890ed1d59665643f09" />
+                  <option name="projectId" value="educloud-9e013" />
+                  <option name="projectNumber" value="712283775148" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />
