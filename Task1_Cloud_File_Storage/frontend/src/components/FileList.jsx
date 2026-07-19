@@ -14,7 +14,7 @@ import {
   FaDownload,
   FaTrash,
 } from "react-icons/fa";
-const BASE_URL = import.meta.env.VITE_API_URL;
+const BASE_URL = (import.meta.env.VITE_API_URL || "/api/files").replace(/\/$/, "");
 
 function FileList({
   refresh,
@@ -36,7 +36,7 @@ function FileList({
     setFiles(response.data);
     setTotalFiles(response.data.length);
 
-    const storageResponse = await API.get("/storage");
+    const storageResponse = await API.get("storage");
     setStorageInfo(storageResponse.data);
 
   } catch (error) {
@@ -107,7 +107,7 @@ const handleDownload = (filename) => {
     if (!confirmDelete) return;
 
     try {
-      await API.delete(`/${filename}`);
+      await API.delete(encodeURIComponent(filename));
 
       toast.success("File deleted successfully!");
 
