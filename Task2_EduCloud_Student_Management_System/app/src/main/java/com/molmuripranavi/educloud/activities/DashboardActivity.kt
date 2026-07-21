@@ -22,6 +22,7 @@ class DashboardActivity : AppCompatActivity() {
         val txtEmail = findViewById<TextView>(R.id.txtEmail)
         val btnLogout = findViewById<MaterialButton>(R.id.btnLogout)
         val cardLeave = findViewById<CardView>(R.id.cardLeave)
+        val cardHistory = findViewById<CardView>(R.id.cardHistory)
 
         // Show logged-in user's email
         txtEmail.text = auth.currentUser?.email ?: "Student"
@@ -36,6 +37,14 @@ class DashboardActivity : AppCompatActivity() {
             auth.signOut()
             startActivity(Intent(this, LoginActivity::class.java))
             finish()
+        }
+        cardHistory.setOnClickListener {
+            startActivity(Intent(this, LeaveHistoryActivity::class.java))
+        }
+        val cardProfile = findViewById<CardView>(R.id.cardProfile)
+
+        cardProfile.setOnClickListener {
+            startActivity(Intent(this, HodLoginActivity::class.java))
         }
     }
 }
