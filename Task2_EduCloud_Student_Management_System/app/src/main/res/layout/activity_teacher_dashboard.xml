@@ -13,7 +13,7 @@
         android:minHeight="?attr/actionBarSize"
         android:paddingTop="28dp"
         android:background="#1565C0"
-        app:title="HOD Dashboard"
+        app:title="@string/teacher_dashboard"
         app:titleTextColor="@android:color/white"
         app:navigationIcon="?attr/homeAsUpIndicator"
         app:navigationIconTint="@android:color/white"/>
@@ -30,11 +30,11 @@
             android:padding="20dp">
 
             <TextView
-                android:id="@+id/txtHodEmail"
+                android:id="@+id/txtTeacherEmail"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="6dp"
-                android:text="hod@gmail.com"
+                android:text="teacher@gmail.com"
                 android:textColor="#616161"/>
             <TextView
                 android:layout_width="wrap_content"
@@ -170,7 +170,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="📋 Pending Requests"
+                        android:text="@string/pending_leave_requests"
                         android:textStyle="bold"
                         android:textSize="20sp"/>
                 </LinearLayout>
@@ -194,7 +194,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="✅ Approved Leaves"
+                        android:text="@string/approved_leaves"
                         android:textStyle="bold"
                         android:textSize="20sp"/>
                 </LinearLayout>
@@ -218,7 +218,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="❌ Rejected Leaves"
+                        android:text="@string/rejected_leaves"
                         android:textStyle="bold"
                         android:textSize="20sp"/>
                 </LinearLayout>
@@ -242,7 +242,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="👤 My Profile"
+                        android:text="@string/my_profile"
                         android:textStyle="bold"
                         android:textSize="20sp"/>
                 </LinearLayout>
@@ -254,7 +254,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:layout_marginTop="30dp"
-                android:text="Logout"
+                android:text="@string/logout"
                 android:textAllCaps="false"/>
 
         </LinearLayout>

@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <com.google.android.material.card.MaterialCardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -16,32 +15,29 @@
         android:padding="16dp">
 
         <TextView
-            android:id="@+id/txtStudentName"
+            android:id="@+id/studentName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="bold"
             android:textSize="18sp"/>
 
         <TextView
-            android:id="@+id/txtDepartment"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-
-        <TextView
-            android:id="@+id/txtLeaveType"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-
-        <TextView
-            android:id="@+id/txtDates"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-
-        <TextView
-            android:id="@+id/txtReason"
+            android:id="@+id/department"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingTop="8dp"/>
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:id="@+id/dates"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:id="@+id/reason"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"/>
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnViewCertificate"
             android:layout_width="wrap_content"
@@ -49,6 +45,7 @@
             android:text="View Certificate"
             android:textAllCaps="false"
             android:layout_marginTop="8dp"/>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -56,19 +53,22 @@
             android:layout_marginTop="12dp">
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnApprove"
+                android:id="@+id/approveBtn"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Approve"/>
+                android:text="Approve"
+                style="@style/Widget.MaterialComponents.Button"/>
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/btnReject"
+                android:id="@+id/rejectBtn"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginStart="8dp"
-                android:text="Reject"/>
+                android:text="Reject"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:textColor="#F44336"/>
 
         </LinearLayout>
 

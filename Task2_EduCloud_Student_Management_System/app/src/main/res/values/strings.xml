@@ -46,4 +46,10 @@
         libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
+    <string name="teacher_dashboard">Teacher Dashboard</string>
+    <string name="pending_leave_requests">📋 Pending Leave Requests</string>
+    <string name="approved_leaves">✅ Approved Leaves</string>
+    <string name="rejected_leaves">❌ Rejected Leaves</string>
+    <string name="my_profile">👤 My Profile</string>
+    <string name="logout">Logout</string>
 </resources>

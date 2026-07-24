@@ -1,32 +1,19 @@
 package com.molmuripranavi.educloud.models
 
 data class LeaveRequest(
-
     var id: String = "",
-
-    var name: String = "",
-
+    var studentName: String = "",
     var email: String = "",
-
     var department: String = "",
-
     var year: String = "",
-
     var section: String = "",
-
+    var studentType: String = "",
     var leaveType: String = "",
-
     var fromDate: String = "",
-
     var toDate: String = "",
-
-    var days: String = "",
-
+    var totalDays: String = "",
     var reason: String = "",
-
     var status: String = "Pending",
-
-    var fileUrl: String = "",
-
+    var certificateUrl: String = "",
     var timestamp: Long = 0
 )

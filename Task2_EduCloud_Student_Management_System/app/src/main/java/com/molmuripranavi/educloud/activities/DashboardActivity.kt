@@ -8,6 +8,7 @@ import androidx.cardview.widget.CardView
 import com.google.android.material.button.MaterialButton
 import com.google.firebase.auth.FirebaseAuth
 import com.molmuripranavi.educloud.R
+import com.google.android.material.card.MaterialCardView
 
 class DashboardActivity : AppCompatActivity() {
 
@@ -35,7 +36,9 @@ class DashboardActivity : AppCompatActivity() {
         // Logout
         btnLogout.setOnClickListener {
             auth.signOut()
-            startActivity(Intent(this, LoginActivity::class.java))
+            val intent = Intent(this, RoleSelectionActivity::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
+            startActivity(intent)
             finish()
         }
         cardHistory.setOnClickListener {
@@ -44,7 +47,11 @@ class DashboardActivity : AppCompatActivity() {
         val cardProfile = findViewById<CardView>(R.id.cardProfile)
 
         cardProfile.setOnClickListener {
-            startActivity(Intent(this, HodLoginActivity::class.java))
+            startActivity(
+                Intent(this, ProfileActivity::class.java)
+            )
         }
+
+
     }
 }

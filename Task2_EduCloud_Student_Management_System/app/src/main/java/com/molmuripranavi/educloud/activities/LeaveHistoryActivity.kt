@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.molmuripranavi.educloud.R
-import com.molmuripranavi.educloud.adapter.LeaveHistoryAdapter
+import com.molmuripranavi.educloud.adapters.LeaveHistoryAdapter
 import com.molmuripranavi.educloud.models.LeaveRequest
 import com.google.android.material.appbar.MaterialToolbar
 

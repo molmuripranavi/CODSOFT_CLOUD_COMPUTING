@@ -6,10 +6,10 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.card.MaterialCardView
 import com.google.firebase.auth.FirebaseAuth
-import com.molmuripranavi.educloud.R
 import com.google.firebase.firestore.FirebaseFirestore
+import com.molmuripranavi.educloud.R
 
-class HodDashboardActivity : AppCompatActivity() {
+class TeacherDashboardActivity : AppCompatActivity() {
 
     private lateinit var auth: FirebaseAuth
     private lateinit var firestore: FirebaseFirestore
@@ -20,7 +20,7 @@ class HodDashboardActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_hod_dashboard)
+        setContentView(R.layout.activity_teacher_dashboard)
 
         auth = FirebaseAuth.getInstance()
         firestore = FirebaseFirestore.getInstance()
@@ -28,8 +28,9 @@ class HodDashboardActivity : AppCompatActivity() {
         val toolbar = findViewById<com.google.android.material.appbar.MaterialToolbar>(R.id.toolbar)
         setSupportActionBar(toolbar)
 
-        val txtHodEmail = findViewById<TextView>(R.id.txtHodEmail)
-        txtHodEmail.text = auth.currentUser?.email ?: "hod@gmail.com"
+        val txtTeacherEmail = findViewById<TextView>(R.id.txtTeacherEmail)
+        txtTeacherEmail.text = auth.currentUser?.email ?: "teacher@gmail.com"
+
         txtPendingCount = findViewById(R.id.txtPendingCount)
         txtApprovedCount = findViewById(R.id.txtApprovedCount)
         txtRejectedCount = findViewById(R.id.txtRejectedCount)
@@ -64,7 +65,6 @@ class HodDashboardActivity : AppCompatActivity() {
 
         firestore.collection("LeaveRequests")
             .addSnapshotListener { snapshots, e ->
-
                 if (e != null || snapshots == null) return@addSnapshotListener
 
                 var pending = 0
@@ -72,13 +72,9 @@ class HodDashboardActivity : AppCompatActivity() {
                 var rejected = 0
 
                 for (doc in snapshots.documents) {
-
                     when (doc.getString("status")) {
-
-                        "Teacher Approved" -> pending++
-
-                        "Approved" -> approved++
-
+                        "Pending" -> pending++
+                        "Approved", "Teacher Approved" -> approved++
                         "Rejected" -> rejected++
                     }
                 }
@@ -89,7 +85,7 @@ class HodDashboardActivity : AppCompatActivity() {
             }
     }
     private fun startLeaveList(status: String) {
-        val intent = Intent(this, HodLeaveListActivity::class.java)
+        val intent = Intent(this, TeacherLeaveListActivity::class.java)
         intent.putExtra("STATUS_FILTER", status)
         startActivity(intent)
     }

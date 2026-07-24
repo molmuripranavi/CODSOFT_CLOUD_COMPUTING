@@ -15,7 +15,6 @@ import com.google.android.material.button.MaterialButton
 import com.google.android.material.textfield.TextInputEditText
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
-import com.google.firebase.storage.FirebaseStorage
 import com.molmuripranavi.educloud.R
 import java.text.SimpleDateFormat
 import java.util.Calendar
@@ -26,7 +25,6 @@ class ApplyLeaveActivity : AppCompatActivity() {
     // Firebase
     private lateinit var auth: FirebaseAuth
     private lateinit var firestore: FirebaseFirestore
-    private lateinit var storage: FirebaseStorage
 
     // Text Fields
     private lateinit var etName: TextInputEditText
@@ -71,7 +69,8 @@ class ApplyLeaveActivity : AppCompatActivity() {
         // Firebase
         auth = FirebaseAuth.getInstance()
         firestore = FirebaseFirestore.getInstance()
-        storage = FirebaseStorage.getInstance()
+        
+        // Explicitly initialize with bucket name from google-services.json
 
         // Text Fields
         etName = findViewById(R.id.etName)
@@ -386,7 +385,11 @@ class ApplyLeaveActivity : AppCompatActivity() {
 
                 "reason" to reason,
 
-                "certificateUrl" to uploadedFileUrl,
+                // Storage not used
+                "certificateUrl" to "",
+
+                // Only store whether a certificate was selected
+                "certificateSelected" to (fileUri != null),
 
                 "status" to "Pending",
 
@@ -533,55 +536,12 @@ class ApplyLeaveActivity : AppCompatActivity() {
             txtSelectedFile.text =
                 fileUri?.lastPathSegment ?: "File Selected"
 
-            uploadFileToFirebase()
+            Toast.makeText(
+                this,
+                "Certificate Selected Successfully",
+                Toast.LENGTH_SHORT
+            ).show()
         }
-    }
-    private fun uploadFileToFirebase() {
-
-        if (fileUri == null)
-            return
-
-        progressBar.visibility = android.view.View.VISIBLE
-
-        val fileName =
-            "leave_documents/" +
-                    System.currentTimeMillis()
-
-        val reference =
-            storage.reference.child(fileName)
-
-        reference.putFile(fileUri!!)
-            .addOnSuccessListener {
-
-                reference.downloadUrl
-                    .addOnSuccessListener { uri ->
-
-                        uploadedFileUrl = uri.toString()
-
-                        progressBar.visibility =
-                            android.view.View.GONE
-
-                        Toast.makeText(
-                            this,
-                            "File Uploaded Successfully",
-                            Toast.LENGTH_SHORT
-                        ).show()
-
-                    }
-
-            }
-            .addOnFailureListener {
-
-                progressBar.visibility =
-                    android.view.View.GONE
-
-                Toast.makeText(
-                    this,
-                    "Upload Failed",
-                    Toast.LENGTH_SHORT
-                ).show()
-
-            }
     }
 
 }

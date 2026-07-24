@@ -1,0 +1,3 @@
+- `[x]` Update `ApplyLeaveActivity.kt` with explicit bucket initialization and better logging
+- `[x]` Verify build
+- `[x]` Update walkthrough
