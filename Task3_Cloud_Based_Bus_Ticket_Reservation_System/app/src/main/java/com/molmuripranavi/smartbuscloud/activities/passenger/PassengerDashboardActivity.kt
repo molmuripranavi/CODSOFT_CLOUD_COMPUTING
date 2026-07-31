@@ -38,9 +38,7 @@ class PassengerDashboardActivity : AppCompatActivity() {
             findViewById<MaterialCardView>(R.id.cardLogout)
 
         // Load passenger name
-        val uid = auth.currentUser?.uid
-
-        if (uid != null) {
+        auth.currentUser?.uid?.let { uid ->
 
             firestore.collection("users")
                 .document(uid)

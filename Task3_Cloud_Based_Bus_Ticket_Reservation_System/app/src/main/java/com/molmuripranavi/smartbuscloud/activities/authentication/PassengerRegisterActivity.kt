@@ -53,7 +53,7 @@ class PassengerRegisterActivity : AppCompatActivity() {
             auth.createUserWithEmailAndPassword(email, password)
                 .addOnSuccessListener {
 
-                    val uid = auth.currentUser!!.uid
+                    val uid = auth.currentUser?.uid ?: return@addOnSuccessListener
 
                     val user = User(
                         name,

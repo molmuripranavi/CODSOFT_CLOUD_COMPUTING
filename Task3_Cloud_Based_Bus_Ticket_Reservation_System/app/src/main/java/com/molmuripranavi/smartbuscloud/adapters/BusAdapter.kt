@@ -16,7 +16,8 @@ import java.util.Locale
 
 class BusAdapter(
     private val context: Context,
-    private val busList: ArrayList<Bus>
+    private val busList: ArrayList<Bus>,
+    private val journeyDate: String
 ) : RecyclerView.Adapter<BusAdapter.BusViewHolder>() {
 
     inner class BusViewHolder(itemView: View) :
@@ -110,6 +111,7 @@ class BusAdapter(
             intent.putExtra("arrival", bus.arrival)
             intent.putExtra("fare", bus.fare)
             intent.putExtra("availableSeats", bus.availableSeats)
+            intent.putExtra("date", journeyDate)
 
             context.startActivity(intent)
         }

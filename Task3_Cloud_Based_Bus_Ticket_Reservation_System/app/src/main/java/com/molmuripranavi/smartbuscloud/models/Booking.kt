@@ -20,6 +20,8 @@ data class Booking(
 
     var seatNumber: String = "",
 
+    var journeyDate: String = "",
+
     var fare: Long = 0,
 
     var status: String = "",

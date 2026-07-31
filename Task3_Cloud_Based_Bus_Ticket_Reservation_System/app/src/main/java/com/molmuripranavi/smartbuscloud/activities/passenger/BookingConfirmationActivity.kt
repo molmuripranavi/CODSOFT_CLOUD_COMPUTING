@@ -34,16 +34,17 @@ class BookingConfirmationActivity : AppCompatActivity() {
         val from = intent.getStringExtra("from") ?: ""
         val to = intent.getStringExtra("to") ?: ""
         val seat = intent.getStringExtra("seatNumber") ?: ""
+        val journeyDate = intent.getStringExtra("date") ?: ""
         val fare = intent.getLongExtra("fare", 0)
 
         txtBusName.text = busName
-        txtRoute.text = "$from → $to"
-        txtSeat.text = "Seat : $seat"
-        txtFare.text = "Fare : ₹$fare"
+        txtRoute.text = getString(R.string.route_format, from, to)
+        txtSeat.text = getString(R.string.seat_format, seat)
+        txtFare.text = getString(R.string.fare_format, fare)
 
         btnConfirm.setOnClickListener {
 
-            val userId = auth.currentUser!!.uid
+            val userId = auth.currentUser?.uid ?: return@setOnClickListener
 
             firestore.collection("users")
                 .document(userId)
@@ -74,6 +75,8 @@ class BookingConfirmationActivity : AppCompatActivity() {
                         "to" to to,
 
                         "seatNumber" to seat,
+
+                        "journeyDate" to journeyDate,
 
                         "fare" to fare,
 

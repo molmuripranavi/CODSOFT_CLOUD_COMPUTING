@@ -38,29 +38,32 @@ class BusListActivity : AppCompatActivity() {
         recyclerBus.layoutManager =
             LinearLayoutManager(this)
 
+        val dateFromIntent = intent.getStringExtra("date") ?: ""
+
         adapter = BusAdapter(
             this,
-            busList
+            busList,
+            dateFromIntent
         )
 
         recyclerBus.adapter = adapter
 
         val from = intent.getStringExtra("from") ?: ""
         val to = intent.getStringExtra("to") ?: ""
-        val date = intent.getStringExtra("date") ?: ""
+        val date = dateFromIntent
 
         if (from.isEmpty() || to.isEmpty()) {
 
-            txtRouteTitle.text = "Invalid Route"
+            txtRouteTitle.text = getString(R.string.invalid_route)
 
             showNoBuses(
-                "Please select a valid source and destination."
+                getString(R.string.select_valid_route)
             )
 
             return
         }
 
-        txtRouteTitle.text = "$from → $to"
+        txtRouteTitle.text = getString(R.string.route_format, from, to)
 
         loadBuses(from, to, date)
     }

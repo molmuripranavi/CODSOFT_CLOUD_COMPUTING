@@ -49,6 +49,7 @@ class SeatSelectionActivity : AppCompatActivity() {
         val busName = intent.getStringExtra("busName") ?: ""
         val from = intent.getStringExtra("from") ?: ""
         val to = intent.getStringExtra("to") ?: ""
+        val journeyDate = intent.getStringExtra("date") ?: ""
 
         fare = intent.getLongExtra("fare", 0)
 
@@ -83,14 +84,16 @@ class SeatSelectionActivity : AppCompatActivity() {
                 selectedSeats.remove(seat.seatNumber)
             }
 
-            txtSelectedSeat.text =
-                "Selected Seats (${selectedSeats.size}/$MAX_SEATS): ${
-                    selectedSeats.joinToString(", ")
-                }"
+            txtSelectedSeat.text = getString(
+                R.string.selected_seats_format,
+                selectedSeats.size,
+                MAX_SEATS,
+                selectedSeats.joinToString(", ")
+            )
 
             val totalFare = fare * selectedSeats.size
 
-            txtFare.text = "Total Fare : ₹$totalFare"
+            txtFare.text = getString(R.string.fare_format, totalFare)
         }
 
         recyclerSeats.layoutManager =
@@ -98,7 +101,7 @@ class SeatSelectionActivity : AppCompatActivity() {
 
         recyclerSeats.adapter = adapter
 
-        loadBookedSeats(busId)
+        loadBookedSeats(busId, journeyDate)
 
         btnContinue.setOnClickListener {
 
@@ -106,7 +109,7 @@ class SeatSelectionActivity : AppCompatActivity() {
 
                 Toast.makeText(
                     this,
-                    "Please select at least one seat.",
+                    getString(R.string.select_seat_error),
                     Toast.LENGTH_SHORT
                 ).show()
 
@@ -122,6 +125,7 @@ class SeatSelectionActivity : AppCompatActivity() {
             intent.putExtra("busName", busName)
             intent.putExtra("from", from)
             intent.putExtra("to", to)
+            intent.putExtra("date", journeyDate)
             val totalFare = fare * selectedSeats.size
 
             intent.putExtra("fare", totalFare)
@@ -159,10 +163,11 @@ class SeatSelectionActivity : AppCompatActivity() {
         }
     }
 
-    private fun loadBookedSeats(busId: String) {
+    private fun loadBookedSeats(busId: String, journeyDate: String) {
 
         firestore.collection("bookings")
             .whereEqualTo("busId", busId)
+            .whereEqualTo("journeyDate", journeyDate)
             .get()
             .addOnSuccessListener { documents ->
 

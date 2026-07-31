@@ -47,7 +47,7 @@ class AdminDashboardActivity : AppCompatActivity() {
                         val name = document.getString("name")
 
                         if (!name.isNullOrEmpty()) {
-                            txtWelcome.text = "Welcome, $name 👋"
+                            txtWelcome.text = getString(R.string.admin_greeting, name)
                         }
                     }
                 }
