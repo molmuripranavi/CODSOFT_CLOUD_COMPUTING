@@ -1,22 +1,30 @@
-# Implementation Plan - Fix TeacherUpdateRecordActivity Crash
+# Implementation Plan - Reduce Dashboard Card Sizes
 
-The `TeacherUpdateRecordActivity` is likely crashing on startup because it attempts to access a `MaterialToolbar` with ID `toolbar` which is missing from its layout file (`activity_teacher_update_record.xml`).
+The user wants to make the dashboard cards in the Teacher Portal smaller. To maintain consistency, I will also apply similar changes to the HOD Portal as they share the same design pattern.
 
 ## Proposed Changes
 
 ### [Component] Layouts
 
-#### [MODIFY] [activity_teacher_update_record.xml](file:///E:/CODSOFT_CLOUD_COMPUTING/Task2_EduCloud_Student_Management_System/app/src/main/res/layout/activity_teacher_update_record.xml)
-- Add a `MaterialToolbar` with ID `toolbar` at the top of the root `LinearLayout`.
-- Set the background to `#1565C0` and title text color to white to match the app's theme.
+#### [MODIFY] [activity_teacher_dashboard.xml](file:///E:/CODSOFT_CLOUD_COMPUTING/Task2_EduCloud_Student_Management_System/app/src/main/res/layout/activity_teacher_dashboard.xml)
+- **Leaves Statistics Cards**: Reduce `android:layout_height` from `145dp` to `125dp`.
+- **Quick Action Cards**: Reduce `android:layout_height` from `190dp` to `160dp`.
+- **Action Card Icons**: Reduce `ImageView` dimensions from `70dp x 70dp` to `55dp x 55dp`.
+- **Action Card Text**: Reduce `textSize` from `22sp` to `19sp` to fit the smaller cards.
+
+#### [MODIFY] [activity_hod_dashboard.xml](file:///E:/CODSOFT_CLOUD_COMPUTING/Task2_EduCloud_Student_Management_System/app/src/main/res/layout/activity_hod_dashboard.xml)
+- Apply identical size reductions to maintain consistency between HOD and Teacher portals:
+    - Statistics Cards: `145dp` -> `125dp`.
+    - Admin Action Cards: `190dp` -> `160dp`.
+    - Icons: `70dp` -> `55dp`.
+    - Text: `22sp` -> `19sp`.
 
 ## Verification Plan
 
 ### Automated Tests
-- Run `:app:compileDebugKotlin` to ensure no compilation errors.
+- Run `:app:assembleDebug` to ensure layout changes don't cause build issues (unlikely for XML changes).
 
 ### Manual Verification
-- Open the Teacher Dashboard.
-- Navigate to **Manage Students**.
-- Click on any student in the list.
-- Verify that `TeacherUpdateRecordActivity` opens successfully and displays the toolbar and student information.
+- Deploy the app and navigate to both the **Teacher Dashboard** and **HOD Dashboard**.
+- Verify that the cards are smaller and that the icons and text are properly scaled and aligned.
+- Ensure the overall layout remains balanced and legible on different screen sizes.
