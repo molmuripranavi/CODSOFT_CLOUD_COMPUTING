@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F7FA">
+
+    <!-- Compact Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#1565C0"
+        android:paddingStart="16dp"
+        android:paddingTop="32dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/back_arrow"
+                android:contentDescription="Back"
+                android:padding="4dp"
+                android:layout_marginEnd="12dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Manage Passengers"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="24sp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View and manage all registered passengers"
+            android:textColor="#E3F2FD"
+            android:textSize="13sp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="2dp"/>
+
+    </LinearLayout>
+
+    <!-- Search -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:hint="Search Passenger"
+        app:startIconDrawable="@android:drawable/ic_menu_search"
+        app:boxCornerRadiusTopStart="16dp"
+        app:boxCornerRadiusTopEnd="16dp"
+        app:boxCornerRadiusBottomStart="16dp"
+        app:boxCornerRadiusBottomEnd="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etSearchPassenger"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Total Passengers -->
+    <TextView
+        android:id="@+id/txtTotalPassengers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Passengers : 0"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="#2E7D32"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="12dp"/>
+
+    <!-- No Data -->
+    <TextView
+        android:id="@+id/txtNoPassengers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No Passengers Found"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:visibility="gone"
+        android:padding="20dp"/>
+
+    <!-- RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerPassengers"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="6dp"/>
+
+</LinearLayout>

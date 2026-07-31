@@ -1,0 +1,3 @@
+- [x] Delete misplaced resource file `app/src/main/res/layout/bg_splash.xml`
+- [x] Verify build completion
+- [x] Create walkthrough

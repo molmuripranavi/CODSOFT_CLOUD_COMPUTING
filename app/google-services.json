@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "399297788688",
+    "project_id": "smartbuscloud-6e199",
+    "storage_bucket": "smartbuscloud-6e199.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:399297788688:android:bde3a34795a1a4777e8395",
+        "android_client_info": {
+          "package_name": "com.molmuripranavi.smartbuscloud"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC11X_8jjWT90TtyTN-Cnepz8uBDElKz_8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

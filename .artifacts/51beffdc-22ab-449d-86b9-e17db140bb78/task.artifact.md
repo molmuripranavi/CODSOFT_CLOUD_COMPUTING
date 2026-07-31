@@ -1,0 +1,5 @@
+- [x] Fix variable reference in `AdminDashboardActivity.kt`
+- [x] Add back button logic to `ManagePassengersActivity.kt`
+- [x] Standardize `activity_manage_passengers.xml` header design
+- [x] Clean up `AndroidManifest.xml` (remove model/adapter activity tags)
+- [x] Verify build

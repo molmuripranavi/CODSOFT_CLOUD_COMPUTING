@@ -1,0 +1,4 @@
+- [ ] Fix Toolbar initialization in `BusListActivity.kt`
+- [ ] Add safety checks for Firestore document mapping in `BusListActivity.kt`
+- [ ] Add logging and user feedback in `SearchBusActivity.kt`
+- [ ] Verify the "Search Bus" to "Bus List" transition

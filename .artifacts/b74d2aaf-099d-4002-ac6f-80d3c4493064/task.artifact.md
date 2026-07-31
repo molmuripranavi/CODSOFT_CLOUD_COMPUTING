@@ -1,0 +1,3 @@
+- [x] Update `libs.versions.toml` with latest Firebase BOM and artifacts
+- [/] Verify dependency resolution via Gradle sync/build
+- [ ] Create walkthrough summary

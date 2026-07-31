@@ -1,0 +1,3 @@
+- [x] Implement UI in `activity_search_bus.xml`
+- [x] Verify build via `./gradlew :app:compileDebugKotlin`
+- [x] Create walkthrough

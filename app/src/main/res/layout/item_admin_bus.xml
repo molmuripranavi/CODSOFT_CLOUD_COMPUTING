@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="12dp"
+    android:layout_marginVertical="8dp"
+    app:cardCornerRadius="18dp"
+    app:cardElevation="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="18dp">
+
+        <!-- Bus Name -->
+        <TextView
+            android:id="@+id/txtBusName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="APSRTC Super Luxury"
+            android:textStyle="bold"
+            android:textColor="#1565C0"
+            android:textSize="22sp"/>
+
+        <!-- Bus Type -->
+        <TextView
+            android:id="@+id/txtBusType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AC Sleeper"
+            android:textSize="15sp"
+            android:textColor="#757575"
+            android:layout_marginTop="2dp"/>
+
+        <!-- Route -->
+        <TextView
+            android:id="@+id/txtRoute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hyderabad → Vijayawada"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:layout_marginTop="14dp"/>
+
+        <!-- Timings -->
+        <TextView
+            android:id="@+id/txtTiming"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="08:30 AM → 01:45 PM"
+            android:textSize="15sp"
+            android:textColor="#616161"
+            android:layout_marginTop="6dp"/>
+
+        <!-- Fare -->
+        <TextView
+            android:id="@+id/txtFare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fare : ₹450"
+            android:textStyle="bold"
+            android:textColor="#2E7D32"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"/>
+
+        <!-- Seats -->
+        <TextView
+            android:id="@+id/txtSeats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Available Seats : 36"
+            android:textSize="15sp"
+            android:textColor="#FB8C00"
+            android:layout_marginTop="4dp"/>
+
+        <!-- Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:layout_marginTop="18dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:text="Edit"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:layout_marginEnd="10dp"
+                app:backgroundTint="#1565C0"
+                app:cornerRadius="12dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:text="Delete"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                app:backgroundTint="#E53935"
+                app:cornerRadius="12dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

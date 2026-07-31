@@ -1,0 +1,5 @@
+- [x] Fix Gradle configuration and build errors
+    - [x] Update top-level `build.gradle.kts` to include Kotlin plugin
+    - [x] Upgrade Kotlin version in `libs.versions.toml`
+    - [x] Handle AGP 9.0+ built-in Kotlin migration
+    - [x] Verify fix by running Gradle build

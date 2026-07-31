@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/txtBusName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="APSRTC Super Luxury"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#1565C0"/>
+
+        <TextView
+            android:id="@+id/txtPassengerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Passenger : Pranavi"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="6dp"/>
+
+        <TextView
+            android:id="@+id/txtPassengerEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email : pranavi@gmail.com"
+            android:layout_marginTop="2dp"/>
+
+        <TextView
+            android:id="@+id/txtRoute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hyderabad → Vijayawada"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/txtSeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seat : A1"/>
+
+        <TextView
+            android:id="@+id/txtFare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fare : ₹450"/>
+
+        <TextView
+            android:id="@+id/txtBookingTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Booked : 31 Jul 2026 10:30 AM"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:id="@+id/txtStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirmed"
+            android:textStyle="bold"
+            android:textColor="#2E7D32"
+            android:layout_marginTop="6dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCancel"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="Cancel"
+                android:textAllCaps="false"/>
+
+            <Space
+                android:layout_width="12dp"
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnDelete"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="Delete"
+                android:textAllCaps="false"
+                app:backgroundTint="#E53935"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

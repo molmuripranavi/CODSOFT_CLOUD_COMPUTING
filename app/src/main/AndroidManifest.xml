@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SmartBusCloud">
+
+        <!-- Authentication -->
+        <activity
+            android:name=".activities.authentication.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.authentication.RoleSelectionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.authentication.PassengerLoginActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activities.authentication.PassengerRegisterActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activities.authentication.AdminLoginActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- Passenger Activities -->
+        <activity
+            android:name=".activities.passenger.PassengerDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.passenger.SearchBusActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.passenger.BusListActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activities.passenger.BusDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.passenger.SeatSelectionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.passenger.MyBookingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.passenger.ProfileActivity"
+            android:exported="false" />
+
+        <!-- Admin Activities -->
+        <activity
+            android:name=".activities.admin.AdminDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.admin.AddBusActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.admin.ManageBusActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.admin.ViewBookingsActivity"
+            android:exported="false" />
+
+        <!-- Deprecated/Common Activities (If any) -->
+        <activity
+            android:name=".activities.authentication.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.authentication.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.passenger.BookingConfirmationActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activities.admin.EditBusActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activities.admin.ManagePassengersActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activities.admin.ReportsActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+    </application>
+
+</manifest>

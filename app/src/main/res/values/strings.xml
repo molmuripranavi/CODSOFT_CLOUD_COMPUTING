@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">SmartBusCloud</string>
+    <string name="passenger_greeting">Hi, %1$s 👋</string>
+    <string name="route_format">%1$s → %2$s</string>
+    <string name="fare_format">Fare : ₹%1$d</string>
+    <string name="failed_load_bookings">Failed to load bookings</string>
+    <string name="selected_seat_format">Selected Seat : %1$s</string>
+    <string name="select_seat_error">Please select a seat</string>
+    <string name="searching_buses">Searching for buses...</string>
+    <string name="no_buses_available">No buses available\nfor this route</string>
+    <string name="invalid_bus_data">Invalid bus data</string>
+    <string name="unable_load_buses">Unable to load buses</string>
+    <string name="seat_format">Seat : %1$s</string>
+</resources>
