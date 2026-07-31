@@ -9,11 +9,14 @@
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:paddingTop="28dp"
         android:background="#1565C0"
-        android:title="Update Student Record"
-        android:titleTextColor="@android:color/white"
-        app:navigationIcon="@drawable/back"/>
+        app:title="Update Record"
+        app:titleTextColor="@android:color/white"
+        app:navigationIcon="?attr/homeAsUpIndicator"
+        app:navigationIconTint="@android:color/white"/>
 
     <ScrollView
         android:layout_width="match_parent"

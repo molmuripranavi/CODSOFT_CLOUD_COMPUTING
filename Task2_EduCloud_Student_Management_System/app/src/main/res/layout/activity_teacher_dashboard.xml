@@ -141,9 +141,9 @@
 
                 android:orientation="vertical"
 
-                android:paddingStart="20dp"
-                android:paddingEnd="20dp"
-                android:paddingTop="28dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="24dp"
                 android:paddingBottom="30dp">
 
 
@@ -160,7 +160,7 @@
 
                     android:textColor="#1565C0"
 
-                    android:textSize="28sp"
+                    android:textSize="24sp"
 
                     android:textStyle="bold" />
 
@@ -172,7 +172,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
 
-                    android:layout_marginTop="22dp"
+                    android:layout_marginTop="16dp"
 
                     android:orientation="horizontal"
 
@@ -184,20 +184,20 @@
                     <com.google.android.material.card.MaterialCardView
 
                         android:layout_width="0dp"
-                        android:layout_height="145dp"
+                        android:layout_height="120dp"
 
                         android:layout_weight="1"
 
-                        android:layout_marginEnd="8dp"
+                        android:layout_marginEnd="6dp"
 
                         android:clickable="true"
                         android:focusable="true"
 
                         app:cardBackgroundColor="#F0EAF4"
 
-                        app:cardCornerRadius="25dp"
+                        app:cardCornerRadius="20dp"
 
-                        app:cardElevation="7dp"
+                        app:cardElevation="5dp"
 
                         app:strokeColor="#D8CEDD"
                         app:strokeWidth="1dp">
@@ -222,7 +222,7 @@
 
                                 android:textColor="#4E4A50"
 
-                                android:textSize="18sp"
+                                android:textSize="14sp"
 
                                 android:textStyle="bold" />
 
@@ -234,13 +234,13 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
 
-                                android:layout_marginTop="8dp"
+                                android:layout_marginTop="6dp"
 
                                 android:text="0"
 
                                 android:textColor="#F57C00"
 
-                                android:textSize="40sp"
+                                android:textSize="32sp"
 
                                 android:textStyle="bold" />
 
@@ -254,18 +254,18 @@
                     <com.google.android.material.card.MaterialCardView
 
                         android:layout_width="0dp"
-                        android:layout_height="145dp"
+                        android:layout_height="120dp"
 
                         android:layout_weight="1"
 
-                        android:layout_marginStart="4dp"
-                        android:layout_marginEnd="4dp"
+                        android:layout_marginStart="3dp"
+                        android:layout_marginEnd="3dp"
 
                         app:cardBackgroundColor="#F0EAF4"
 
-                        app:cardCornerRadius="25dp"
+                        app:cardCornerRadius="20dp"
 
-                        app:cardElevation="7dp"
+                        app:cardElevation="5dp"
 
                         app:strokeColor="#D8CEDD"
                         app:strokeWidth="1dp">
@@ -290,7 +290,7 @@
 
                                 android:textColor="#4E4A50"
 
-                                android:textSize="18sp"
+                                android:textSize="14sp"
 
                                 android:textStyle="bold" />
 
@@ -302,13 +302,13 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
 
-                                android:layout_marginTop="8dp"
+                                android:layout_marginTop="6dp"
 
                                 android:text="0"
 
                                 android:textColor="#388E3C"
 
-                                android:textSize="40sp"
+                                android:textSize="32sp"
 
                                 android:textStyle="bold" />
 
@@ -322,17 +322,17 @@
                     <com.google.android.material.card.MaterialCardView
 
                         android:layout_width="0dp"
-                        android:layout_height="145dp"
+                        android:layout_height="120dp"
 
                         android:layout_weight="1"
 
-                        android:layout_marginStart="8dp"
+                        android:layout_marginStart="6dp"
 
                         app:cardBackgroundColor="#F0EAF4"
 
-                        app:cardCornerRadius="25dp"
+                        app:cardCornerRadius="20dp"
 
-                        app:cardElevation="7dp"
+                        app:cardElevation="5dp"
 
                         app:strokeColor="#D8CEDD"
                         app:strokeWidth="1dp">
@@ -357,7 +357,7 @@
 
                                 android:textColor="#4E4A50"
 
-                                android:textSize="18sp"
+                                android:textSize="14sp"
 
                                 android:textStyle="bold" />
 
@@ -369,13 +369,13 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
 
-                                android:layout_marginTop="8dp"
+                                android:layout_marginTop="6dp"
 
                                 android:text="0"
 
                                 android:textColor="#D32F2F"
 
-                                android:textSize="40sp"
+                                android:textSize="32sp"
 
                                 android:textStyle="bold" />
 
@@ -395,31 +395,29 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
 
-                    android:layout_marginTop="52dp"
+                    android:layout_marginTop="40dp"
 
                     android:text="Quick Actions"
 
                     android:textColor="#1565C0"
 
-                    android:textSize="28sp"
+                    android:textSize="24sp"
 
                     android:textStyle="bold" />
 
 
-                <!-- ============================= -->
-                <!-- ROW 1 -->
-                <!-- ============================= -->
-
-                <LinearLayout
+                <GridLayout
 
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
 
-                    android:layout_marginTop="24dp"
+                    android:layout_marginTop="16dp"
 
-                    android:orientation="horizontal"
+                    android:columnCount="2"
 
-                    android:weightSum="2">
+                    android:alignmentMode="alignMargins"
+
+                    android:columnOrderPreserved="false">
 
 
                     <!-- STUDENTS -->
@@ -429,11 +427,11 @@
                         android:id="@+id/cardManageStudents"
 
                         android:layout_width="0dp"
-                        android:layout_height="190dp"
+                        android:layout_height="150dp"
 
-                        android:layout_weight="1"
+                        android:layout_columnWeight="1"
 
-                        android:layout_marginEnd="10dp"
+                        android:layout_margin="8dp"
 
                         android:clickable="true"
                         android:focusable="true"
@@ -442,9 +440,9 @@
 
                         app:cardBackgroundColor="#F0EAF4"
 
-                        app:cardCornerRadius="28dp"
+                        app:cardCornerRadius="22dp"
 
-                        app:cardElevation="8dp"
+                        app:cardElevation="5dp"
 
                         app:strokeColor="#D8CEDD"
                         app:strokeWidth="1dp">
@@ -462,8 +460,8 @@
 
                             <ImageView
 
-                                android:layout_width="70dp"
-                                android:layout_height="70dp"
+                                android:layout_width="55dp"
+                                android:layout_height="55dp"
 
                                 android:src="@drawable/student"
 
@@ -477,13 +475,13 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
 
-                                android:layout_marginTop="14dp"
+                                android:layout_marginTop="12dp"
 
                                 android:text="Students"
 
                                 android:textColor="#4E4A50"
 
-                                android:textSize="22sp"
+                                android:textSize="18sp"
 
                                 android:textStyle="bold" />
 
@@ -499,11 +497,11 @@
                         android:id="@+id/cardPending"
 
                         android:layout_width="0dp"
-                        android:layout_height="190dp"
+                        android:layout_height="150dp"
 
-                        android:layout_weight="1"
+                        android:layout_columnWeight="1"
 
-                        android:layout_marginStart="10dp"
+                        android:layout_margin="8dp"
 
                         android:clickable="true"
                         android:focusable="true"
@@ -512,9 +510,9 @@
 
                         app:cardBackgroundColor="#F0EAF4"
 
-                        app:cardCornerRadius="28dp"
+                        app:cardCornerRadius="22dp"
 
-                        app:cardElevation="8dp"
+                        app:cardElevation="5dp"
 
                         app:strokeColor="#D8CEDD"
                         app:strokeWidth="1dp">
@@ -532,8 +530,8 @@
 
                             <ImageView
 
-                                android:layout_width="70dp"
-                                android:layout_height="70dp"
+                                android:layout_width="55dp"
+                                android:layout_height="55dp"
 
                                 android:src="@drawable/pending"
 
@@ -547,37 +545,19 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
 
-                                android:layout_marginTop="14dp"
+                                android:layout_marginTop="12dp"
 
                                 android:text="Pending"
 
                                 android:textColor="#4E4A50"
 
-                                android:textSize="22sp"
+                                android:textSize="18sp"
 
                                 android:textStyle="bold" />
 
                         </LinearLayout>
 
                     </com.google.android.material.card.MaterialCardView>
-
-                </LinearLayout>
-
-
-                <!-- ============================= -->
-                <!-- ROW 2 -->
-                <!-- ============================= -->
-
-                <LinearLayout
-
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-
-                    android:layout_marginTop="22dp"
-
-                    android:orientation="horizontal"
-
-                    android:weightSum="2">
 
 
                     <!-- APPROVED -->
@@ -587,11 +567,11 @@
                         android:id="@+id/cardApproved"
 
                         android:layout_width="0dp"
-                        android:layout_height="190dp"
+                        android:layout_height="150dp"
 
-                        android:layout_weight="1"
+                        android:layout_columnWeight="1"
 
-                        android:layout_marginEnd="10dp"
+                        android:layout_margin="8dp"
 
                         android:clickable="true"
                         android:focusable="true"
@@ -600,9 +580,9 @@
 
                         app:cardBackgroundColor="#F0EAF4"
 
-                        app:cardCornerRadius="28dp"
+                        app:cardCornerRadius="22dp"
 
-                        app:cardElevation="8dp"
+                        app:cardElevation="5dp"
 
                         app:strokeColor="#D8CEDD"
                         app:strokeWidth="1dp">
@@ -620,8 +600,8 @@
 
                             <ImageView
 
-                                android:layout_width="70dp"
-                                android:layout_height="70dp"
+                                android:layout_width="55dp"
+                                android:layout_height="55dp"
 
                                 android:src="@drawable/approved"
 
@@ -635,13 +615,13 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
 
-                                android:layout_marginTop="14dp"
+                                android:layout_marginTop="12dp"
 
                                 android:text="Approved"
 
                                 android:textColor="#4E4A50"
 
-                                android:textSize="22sp"
+                                android:textSize="18sp"
 
                                 android:textStyle="bold" />
 
@@ -657,11 +637,11 @@
                         android:id="@+id/cardRejected"
 
                         android:layout_width="0dp"
-                        android:layout_height="190dp"
+                        android:layout_height="150dp"
 
-                        android:layout_weight="1"
+                        android:layout_columnWeight="1"
 
-                        android:layout_marginStart="10dp"
+                        android:layout_margin="8dp"
 
                         android:clickable="true"
                         android:focusable="true"
@@ -670,9 +650,9 @@
 
                         app:cardBackgroundColor="#F0EAF4"
 
-                        app:cardCornerRadius="28dp"
+                        app:cardCornerRadius="22dp"
 
-                        app:cardElevation="8dp"
+                        app:cardElevation="5dp"
 
                         app:strokeColor="#D8CEDD"
                         app:strokeWidth="1dp">
@@ -690,8 +670,8 @@
 
                             <ImageView
 
-                                android:layout_width="70dp"
-                                android:layout_height="70dp"
+                                android:layout_width="55dp"
+                                android:layout_height="55dp"
 
                                 android:src="@drawable/rejected"
 
@@ -705,35 +685,19 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
 
-                                android:layout_marginTop="14dp"
+                                android:layout_marginTop="12dp"
 
                                 android:text="Rejected"
 
                                 android:textColor="#4E4A50"
 
-                                android:textSize="22sp"
+                                android:textSize="18sp"
 
                                 android:textStyle="bold" />
 
                         </LinearLayout>
 
                     </com.google.android.material.card.MaterialCardView>
-
-                </LinearLayout>
-
-
-                <!-- ============================= -->
-                <!-- ROW 3 -->
-                <!-- ============================= -->
-
-                <LinearLayout
-
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-
-                    android:layout_marginTop="22dp"
-
-                    android:orientation="horizontal">
 
 
                     <!-- PROFILE -->
@@ -743,11 +707,11 @@
                         android:id="@+id/cardProfile"
 
                         android:layout_width="0dp"
-                        android:layout_height="190dp"
+                        android:layout_height="150dp"
 
-                        android:layout_weight="1"
+                        android:layout_columnWeight="1"
 
-                        android:layout_marginEnd="10dp"
+                        android:layout_margin="8dp"
 
                         android:clickable="true"
                         android:focusable="true"
@@ -756,9 +720,9 @@
 
                         app:cardBackgroundColor="#F0EAF4"
 
-                        app:cardCornerRadius="28dp"
+                        app:cardCornerRadius="22dp"
 
-                        app:cardElevation="8dp"
+                        app:cardElevation="5dp"
 
                         app:strokeColor="#D8CEDD"
                         app:strokeWidth="1dp">
@@ -776,8 +740,8 @@
 
                             <ImageView
 
-                                android:layout_width="70dp"
-                                android:layout_height="70dp"
+                                android:layout_width="55dp"
+                                android:layout_height="55dp"
 
                                 android:src="@drawable/profile"
 
@@ -791,13 +755,13 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
 
-                                android:layout_marginTop="14dp"
+                                android:layout_marginTop="12dp"
 
                                 android:text="My Profile"
 
                                 android:textColor="#4E4A50"
 
-                                android:textSize="22sp"
+                                android:textSize="18sp"
 
                                 android:textStyle="bold" />
 
@@ -805,7 +769,7 @@
 
                     </com.google.android.material.card.MaterialCardView>
 
-                </LinearLayout>
+                </GridLayout>
 
             </LinearLayout>
 
@@ -823,6 +787,7 @@
         android:id="@+id/btnLogout"
 
         android:layout_width="0dp"
+
         android:layout_height="64dp"
 
         android:layout_marginStart="20dp"
@@ -840,6 +805,7 @@
         android:gravity="center"
 
         android:insetTop="0dp"
+
         android:insetBottom="0dp"
 
         app:backgroundTint="#6A4FB3"
