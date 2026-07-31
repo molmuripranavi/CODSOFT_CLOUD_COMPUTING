@@ -140,6 +140,7 @@ EduCloud
 └── README.md
 ```
 # Attendance
+```
 Attendance
 │
 ├── studentId
@@ -147,8 +148,10 @@ Attendance
 ├── attendedClasses
 ├── totalClasses
 └── percentage
+```
 
 # Grades
+```
 Grades
 │
 ├── studentId
@@ -156,8 +159,10 @@ Grades
 ├── marks
 ├── grade
 └── semester
+```
 
-Courses
+# Courses
+```
 Courses
 │
 ├── courseCode
@@ -165,8 +170,10 @@ Courses
 ├── faculty
 ├── credits
 └── semester
+```
 
 # Announcements
+```
 Announcements
 │
 ├── title
@@ -174,10 +181,10 @@ Announcements
 ├── date
 └── createdBy
 ---
-
+```
 # 🏗️ System Architecture
 
-```text
+```
                          +-----------------------+
                          |   Firebase Auth       |
                          | (Google Sign-In/Login)|
@@ -214,7 +221,6 @@ StudentProfiles    LeaveRequests    Attendance      Grades      Announcements
       ▼
  Real-Time Cloud Synchronization
 ```
-```
 
 ---
 
@@ -246,6 +252,7 @@ Reject        Approve
 ---
 
 # 📱 Application Screens
+---
 
 ## 👨‍🎓 Student Module
 
@@ -259,6 +266,7 @@ Reject        Approve
 - Leave History
 - Leave Details
 - Real-time Leave Status Tracking
+---
 
 ## Teacher
 
@@ -266,6 +274,7 @@ Reject        Approve
 - Pending Requests
 - Approved Requests
 - Rejected Requests
+---
 
 ## 👨‍💼 HOD Module
 
@@ -278,6 +287,7 @@ Reject        Approve
 - Approved Requests
 - Rejected Requests
 - Final Leave Approval
+---
 
 ## ☁️ Firebase Backend
 
@@ -293,6 +303,7 @@ Reject        Approve
 
 # 📸 Screenshots
 
+---
 
 ## 1. Role Selection
 
@@ -317,14 +328,17 @@ Reject        Approve
 
 <img width="738" height="1600" alt="WhatsApp Image 2026-07-31 at 3 39 41 PM" src="https://github.com/user-attachments/assets/77663c76-29d8-4a31-9f7b-1fe02fd99ba1" />
 
+---
 
 ## 5.Attendance
 
 <img width="738" height="1600" alt="WhatsApp Image 2026-07-31 at 3 40 49 PM" src="https://github.com/user-attachments/assets/571f32fb-9ec8-4444-9793-6783750d3157" />
+---
 
 ## 6.Grades
 
 <img width="738" height="1600" alt="WhatsApp Image 2026-07-31 at 3 41 42 PM" src="https://github.com/user-attachments/assets/c3e10002-2650-40ed-8c1c-8d5089c6d8c6" />
+---
 
 ## 7.Announcements
 
@@ -355,11 +369,13 @@ Reject        Approve
 
 <img width="738" height="1600" alt="WhatsApp Image 2026-07-31 at 3 45 02 PM" src="https://github.com/user-attachments/assets/15fc2754-e233-4754-8812-d1724131003c" />
 <img width="738" height="1600" alt="WhatsApp Image 2026-07-31 at 3 45 33 PM" src="https://github.com/user-attachments/assets/6622b122-cf17-4ce3-b2cb-62f7e01eee50" />
+---
 
 ## 11.Teacher Profile
 
 <img width="738" height="1600" alt="WhatsApp Image 2026-07-31 at 3 46 09 PM" src="https://github.com/user-attachments/assets/f96fb8d8-9a25-4c9c-a0a1-2ea0971a7807" />
 
+---
 
 ## 12.Manage Students
 
@@ -390,11 +406,13 @@ Reject        Approve
 
 <img width="738" height="1600" alt="WhatsApp Image 2026-07-31 at 3 50 10 PM" src="https://github.com/user-attachments/assets/53260bd1-37b3-4be3-83ce-2c6e3a649cd8" />
 <img width="738" height="1600" alt="WhatsApp Image 2026-07-31 at 3 50 37 PM" src="https://github.com/user-attachments/assets/1249055c-4565-4e44-aeba-7be6372ef0ed" />
+---
 
 ## 17.HOD Profile
 
 <img width="738" height="1600" alt="WhatsApp Image 2026-07-31 at 3 53 39 PM" src="https://github.com/user-attachments/assets/4731abf4-35f9-473f-8a6c-3138629d0a6e" />
 
+---
 
 ## 18.HOD Analytics Dashboard
 
@@ -431,19 +449,23 @@ Reject        Approve
 
 <img width="1107" height="530" alt="image" src="https://github.com/user-attachments/assets/30ffcd70-c209-4c31-9433-785cae80b89b" />
 
+---
 
 ## 24.Firestore – Attendance
 
 <img width="996" height="548" alt="image" src="https://github.com/user-attachments/assets/1238ade4-f3b0-4a38-8852-41f38ae94158" />
+---
 
 ## 25.Firestore – Grades
 
 <img width="1007" height="570" alt="image" src="https://github.com/user-attachments/assets/41bd124a-cb10-4760-acdf-044fd55e61c1" />
+---
 
 ## 26.Firestore – Courses
 
 <img width="1013" height="573" alt="image" src="https://github.com/user-attachments/assets/7f86ca0f-248a-40ce-8846-f74e30113c56" />
 
+---
 
 ## 27.Firestore – Announcements
 
@@ -452,6 +474,7 @@ Reject        Approve
 ---
 
 # 🚀 Getting Started
+---
 
 ## Prerequisites
 
@@ -497,6 +520,7 @@ git clone https://github.com/molmuripranavi/CODSOFT_CLOUD_COMPUTING.git
 ---
 
 ## Default User Roles
+---
 
 The application supports three types of users:
 
@@ -619,7 +643,7 @@ Announcements
 
 ## Users
 
-```text
+```
 Users
 │
 ├── email
@@ -627,9 +651,9 @@ Users
 └── role
 ```
 ```
-
+```
 # 🌟 Key Highlights
-
+```
 - 📱 Cloud-Based Student Management System developed using **Kotlin** and **Firebase**.
 - 🔐 Secure role-based authentication for **Students, Teachers, and HODs** using **Firebase Authentication**.
 - ☁️ Real-time cloud data synchronization with **Firebase Cloud Firestore**.
@@ -644,9 +668,9 @@ Users
 - 📂 Well-structured Android project following modular architecture and reusable components.
 - 📈 Scalable Firebase backend for efficient cloud-based data management.
 ---
-
+```
 # 🚀 Future Enhancements
-
+```
 - 🔔 Push Notifications for leave status updates and announcements.
 - 📧 Email Notifications for leave approvals, rejections, and important notices.
 - 📂 Firebase Storage integration for uploading medical certificates and supporting documents.
@@ -665,7 +689,7 @@ Users
 - ☁️ Offline data caching and synchronization.
 
 ---
-
+```
 # 👩‍💻 Author
 
 **Molmuri Pranavi**
