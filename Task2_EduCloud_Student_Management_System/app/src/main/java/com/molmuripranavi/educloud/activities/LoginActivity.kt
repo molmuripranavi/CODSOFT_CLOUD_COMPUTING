@@ -49,6 +49,10 @@ class LoginActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        
+        // Match professional blue theme for status bar
+        window.statusBarColor = android.graphics.Color.parseColor("#1565C0")
+        
         setContentView(R.layout.activity_login)
 
         auth = FirebaseAuth.getInstance()

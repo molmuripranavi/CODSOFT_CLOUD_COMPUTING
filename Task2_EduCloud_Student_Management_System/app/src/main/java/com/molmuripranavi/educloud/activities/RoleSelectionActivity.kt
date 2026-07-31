@@ -10,6 +10,10 @@ class RoleSelectionActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        
+        // Standardize blue status bar for consistency
+        window.statusBarColor = android.graphics.Color.parseColor("#1565C0")
+        
         setContentView(R.layout.activity_role_selection)
 
         val cardStudent = findViewById<CardView>(R.id.cardStudent)

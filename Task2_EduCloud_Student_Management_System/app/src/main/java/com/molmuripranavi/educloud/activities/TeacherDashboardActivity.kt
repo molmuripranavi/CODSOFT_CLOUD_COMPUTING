@@ -20,6 +20,10 @@ class TeacherDashboardActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        
+        // Robust Fix: Force status bar to branded blue
+        window.statusBarColor = android.graphics.Color.parseColor("#1565C0")
+        
         setContentView(R.layout.activity_teacher_dashboard)
 
         auth = FirebaseAuth.getInstance()
@@ -36,6 +40,10 @@ class TeacherDashboardActivity : AppCompatActivity() {
         txtRejectedCount = findViewById(R.id.txtRejectedCount)
 
         loadStatistics()
+
+        findViewById<MaterialCardView>(R.id.cardManageStudents).setOnClickListener {
+            startActivity(Intent(this, TeacherManageStudentsActivity::class.java))
+        }
 
         findViewById<MaterialCardView>(R.id.cardPending).setOnClickListener {
             startLeaveList("Pending")
@@ -72,10 +80,16 @@ class TeacherDashboardActivity : AppCompatActivity() {
                 var rejected = 0
 
                 for (doc in snapshots.documents) {
-                    when (doc.getString("status")) {
-                        "Pending" -> pending++
-                        "Approved", "Teacher Approved" -> approved++
-                        "Rejected" -> rejected++
+                    val status = doc.getString("status")?.trim()
+                    // STRICT SYNC: Only count if document has a timestamp (matches TeacherLeaveListActivity query)
+                    val hasTimestamp = doc.get("timestamp") != null
+
+                    if (hasTimestamp) {
+                        when (status) {
+                            "Pending" -> pending++
+                            "Approved", "Teacher Approved" -> approved++
+                            "Rejected" -> rejected++
+                        }
                     }
                 }
 

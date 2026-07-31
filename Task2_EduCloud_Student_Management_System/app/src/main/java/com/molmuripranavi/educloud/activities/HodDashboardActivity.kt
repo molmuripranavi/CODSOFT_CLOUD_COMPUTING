@@ -20,6 +20,10 @@ class HodDashboardActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        
+        // Robust Fix: Force status bar to branded blue
+        window.statusBarColor = android.graphics.Color.parseColor("#1565C0")
+        
         setContentView(R.layout.activity_hod_dashboard)
 
         auth = FirebaseAuth.getInstance()
@@ -36,6 +40,10 @@ class HodDashboardActivity : AppCompatActivity() {
 
         loadStatistics()
 
+        findViewById<MaterialCardView>(R.id.cardAnalytics).setOnClickListener {
+            startActivity(Intent(this, HodAnalyticsActivity::class.java))
+        }
+
         findViewById<MaterialCardView>(R.id.cardPending).setOnClickListener {
             startLeaveList("Pending")
         }
@@ -45,6 +53,19 @@ class HodDashboardActivity : AppCompatActivity() {
         }
 
         findViewById<MaterialCardView>(R.id.cardRejected).setOnClickListener {
+            startLeaveList("Rejected")
+        }
+
+        // LEAVE ACTION CARDS (Larger buttons in Admin Actions section)
+        findViewById<MaterialCardView>(R.id.cardPendingAction).setOnClickListener {
+            startLeaveList("Pending")
+        }
+
+        findViewById<MaterialCardView>(R.id.cardApprovedAction).setOnClickListener {
+            startLeaveList("Approved")
+        }
+
+        findViewById<MaterialCardView>(R.id.cardRejectedAction).setOnClickListener {
             startLeaveList("Rejected")
         }
 
@@ -73,13 +94,16 @@ class HodDashboardActivity : AppCompatActivity() {
 
                 for (doc in snapshots.documents) {
 
-                    when (doc.getString("status")) {
+                    val status = doc.getString("status")?.trim()
+                    // STRICT SYNC: Only count if document has a timestamp (matches HodLeaveListActivity query)
+                    val hasTimestamp = doc.get("timestamp") != null
 
-                        "Teacher Approved" -> pending++
-
-                        "Approved" -> approved++
-
-                        "Rejected" -> rejected++
+                    if (hasTimestamp) {
+                        when (status) {
+                            "Teacher Approved" -> pending++
+                            "Approved" -> approved++
+                            "Rejected" -> rejected++
+                        }
                     }
                 }
 

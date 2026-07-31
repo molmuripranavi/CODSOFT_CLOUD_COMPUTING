@@ -52,4 +52,6 @@
     <string name="rejected_leaves">❌ Rejected Leaves</string>
     <string name="my_profile">👤 My Profile</string>
     <string name="logout">Logout</string>
+    <string name="my_attendance">My Attendance</string>
+    <string name="no_attendance_data">No attendance data found</string>
 </resources>
