@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F7FA">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#1565C0"
+        android:title="Update Student Record"
+        android:titleTextColor="@android:color/white"
+        app:navigationIcon="@drawable/back"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/txtStudentInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Updating for: Student Name (Roll)"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="#1565C0"
+                android:layout_marginBottom="20dp"/>
+
+            <!-- Attendance Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Update Attendance"
+                        android:textStyle="bold"
+                        android:textSize="16sp"/>
+
+                    <EditText
+                        android:id="@+id/etSubjectAttendance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Subject Name"
+                        android:layout_marginTop="8dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="8dp">
+
+                        <EditText
+                            android:id="@+id/etAttended"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="Attended"
+                            android:inputType="number"/>
+
+                        <EditText
+                            android:id="@+id/etTotal"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="Total"
+                            android:inputType="number"/>
+                    </LinearLayout>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnUpdateAttendance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Update Attendance"
+                        android:layout_marginTop="12dp"/>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Grades Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Update Grades"
+                        android:textStyle="bold"
+                        android:textSize="16sp"/>
+
+                    <EditText
+                        android:id="@+id/etSubjectGrade"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Subject Name"
+                        android:layout_marginTop="8dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="8dp">
+
+                        <EditText
+                            android:id="@+id/etInternal"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="Internal"
+                            android:inputType="number"/>
+
+                        <EditText
+                            android:id="@+id/etExternal"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="External"
+                            android:inputType="number"/>
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/etGrade"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Grade (A, B, etc.)"
+                        android:layout_marginTop="8dp"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnUpdateGrade"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Update Grade"
+                        android:layout_marginTop="12dp"/>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
