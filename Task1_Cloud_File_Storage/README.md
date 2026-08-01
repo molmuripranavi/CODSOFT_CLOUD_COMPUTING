@@ -1,10 +1,13 @@
 # ☁️ Cloud File Storage Backend
 
-A RESTful Cloud File Storage Backend developed using **Spring Boot**. This application allows users to upload, list, download, and delete files through REST APIs. Uploaded files are stored locally in the `uploads` directory.
-## 🔗 Live Links
-- 🌐 Frontend: https://codsoft-cloud-computing-h15blvs31-molmuripranavis-projects.vercel.app
-- ⚙️ Backend API: https://codsoft-cloud-computing.onrender.com
+A RESTful Cloud File Storage Backend built with **Spring Boot** that enables users to upload, view, download, and delete files through REST APIs.
 
+## 🔗 Live Links
+
+- 🌐 Frontend: https://your-project.vercel.app
+- ⚙️ Backend API: https://codsoft-cloud-computing.onrender.com
+- 📂 Frontend Repository: https://github.com/molmuripranavi/CloudVault-Frontend
+- 📂 Backend Repository: https://github.com/molmuripranavi/CloudVault
 ---
 
 ![Java](https://img.shields.io/badge/Java-17-orange)
@@ -13,6 +16,7 @@ A RESTful Cloud File Storage Backend developed using **Spring Boot**. This appli
 ![React](https://img.shields.io/badge/React-19-61DAFB)
 ![Render](https://img.shields.io/badge/Backend-Render-blueviolet)
 ![Vercel](https://img.shields.io/badge/Frontend-Vercel-black)
+---
 ## 📖 Overview
 
 This project provides a simple file management system where users can:
@@ -52,9 +56,7 @@ The backend is built using Spring Boot and tested using Postman.
 - Spring Data JPA
 - MySQL
 - Postman
-
 ---
-
 ## 📂 Project Structure
 
 ```
@@ -64,18 +66,18 @@ backend
 │   └── main
 │       ├── java
 │       │   └── com.codesoft.cloud_file_storage
+│       │       ├── config
 │       │       ├── controller
-│       │       │      FileController.java
+│       │       ├── dto
 │       │       └── CloudFileStorageApplication.java
 │       │
 │       └── resources
-│              application.properties
+│           └── application.properties
 │
 ├── uploads
 ├── pom.xml
 └── mvnw.cmd
 ```
-
 ## 🏗️ System Architecture
 
 ```
@@ -150,7 +152,6 @@ http://localhost:8080
 ```
 
 ---
-
 # 📡 API Endpoints
 
 | Method | Endpoint | Description |
@@ -190,7 +191,6 @@ file
 7. Select a file from your computer.
 8. To upload multiple files, add multiple rows with the same key (`file`).
 9. Click **Send**
-<img width="1364" height="717" alt="image" src="https://github.com/user-attachments/assets/687431c0-10e6-4a7a-863c-2117d95b2a91" />
 
 ### Success Response
 
@@ -200,7 +200,6 @@ molmuripranaviresume.pdf
 BH23_AIML_Syllabus_Complete.pdf
 Declaration Form English.pdf
 ```
-<img width="1365" height="722" alt="image" src="https://github.com/user-attachments/assets/6d95dd71-8673-4de9-b8c4-2b7cf4917ba3" />
 
 ---
 
@@ -223,7 +222,6 @@ http://localhost:8080/api/files
     "molmuripranaviresume.pdf"
 ]
 ```
-<img width="1364" height="720" alt="image" src="https://github.com/user-attachments/assets/b0c0a31b-aad3-4234-9873-c2f5c0ddf6fb" />
 
 ---
 
@@ -238,7 +236,6 @@ http://localhost:8080/api/files/download/molmuripranaviresume.pdf
 ```
 
 The requested file is downloaded to the user's system. Depending on your API client (such as Postman), you may be prompted to save the file or view its binary content.
-<img width="1360" height="711" alt="image" src="https://github.com/user-attachments/assets/f21e51db-b0ca-4a9e-a3d8-b7e5ee3d9b48" />
 
 ---
 
@@ -257,7 +254,6 @@ http://localhost:8080/api/files/molmuripranaviresume.pdf
 ```
 File deleted successfully.
 ```
-<img width="1365" height="720" alt="image" src="https://github.com/user-attachments/assets/32249d32-1f53-4023-a14f-0ce4a77ab4e7" />
 
 ---
 
@@ -288,14 +284,6 @@ Verified functionalities:
 
 ---
 
-# 📸 Screenshots
-
-Add screenshots of:
-
-- Spring Boot application running
-  <img width="1365" height="678" alt="image" src="https://github.com/user-attachments/assets/177b1022-0817-4342-a740-8d5722d38727" />
----
-
 # ☁️ Deployment
 
 | Service | Platform |
@@ -303,14 +291,9 @@ Add screenshots of:
 | Frontend | Vercel |
 | Backend | Render |
 | Database | MySQL |
-## 👩‍💻 Author
 
-**Molmuri Pranavi**
-
-- B.Tech, Computer Science & Engineering (AI & ML)
-- BVRIT Hyderabad College of Engineering for Women
-- GitHub: https://github.com/molmuripranavi
 ---
+
 
 ## 🚀 Future Scope
 
@@ -322,3 +305,13 @@ Add screenshots of:
 - File Sharing using Secure Links
 - Docker & Kubernetes Deployment
 - Email Notifications
+---
+## 👩‍💻 Author
+
+**Molmuri Pranavi**
+
+- B.Tech, Computer Science & Engineering (AI & ML)
+- BVRIT Hyderabad College of Engineering for Women
+- GitHub: https://github.com/molmuripranavi
+---
+
