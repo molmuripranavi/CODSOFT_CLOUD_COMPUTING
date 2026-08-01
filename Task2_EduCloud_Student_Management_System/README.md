@@ -307,52 +307,51 @@ Reject        Approve
 
 ## 1. Role Selection
 
-<img width="738" height="1600" alt="WhatsApp Image 2026-07-25 at 5 39 47 PM" src="https://github.com/user-attachments/assets/6f6d387c-8ff7-4b11-aec4-6381490c0f15" />
+<img width="738" height="1600" alt="WhatsApp Image 2026-07-25 at 5 39 47 PM" src="https://github.com/user-attachments/assets/73d1d84f-d0e3-4d3b-8588-7da2cc26dd5b" />
 
 
 ---
 
 ## 2. Student Dashboard
 
-<img width="738" height="1600" alt="WhatsApp Image 2026-07-31 at 3 37 23 PM" src="https://github.com/user-attachments/assets/201577b4-6e06-4846-842d-250ca79b100c" />
+<img width="738" height="1600" alt="WhatsApp Image 2026-07-31 at 3 37 23 PM" src="https://github.com/user-attachments/assets/62dd059e-5b09-411f-ba94-d22862d723e0" />
 
 
 ---
 
 ## 3. Student Profile
 
-<img width="738" height="1600" alt="WhatsApp Image 2026-07-31 at 3 38 07 PM" src="https://github.com/user-attachments/assets/8d53c91e-6420-4b2b-89c7-09170f83b910" />
+<img width="738" height="1600" alt="WhatsApp Image 2026-07-31 at 3 38 07 PM" src="https://github.com/user-attachments/assets/65917b4a-39ac-4b25-b506-7368cdfb5ced" />
 
 ---
 ## 4.Courses
 
-<img width="738" height="1600" alt="WhatsApp Image 2026-07-31 at 3 39 41 PM" src="https://github.com/user-attachments/assets/77663c76-29d8-4a31-9f7b-1fe02fd99ba1" />
+<img width="738" height="1600" alt="WhatsApp Image 2026-07-31 at 3 39 41 PM" src="https://github.com/user-attachments/assets/ac72a1ef-8ccd-4551-bc41-afde6068a0c8" />
 
 ---
 
 ## 5.Attendance
 
-<img width="738" height="1600" alt="WhatsApp Image 2026-07-31 at 3 40 49 PM" src="https://github.com/user-attachments/assets/571f32fb-9ec8-4444-9793-6783750d3157" />
+<img width="738" height="1600" alt="WhatsApp Image 2026-07-31 at 3 40 49 PM" src="https://github.com/user-attachments/assets/898a988e-37d1-434c-9d6c-b4939098b8fa" />
 ---
 
 ## 6.Grades
 
-<img width="738" height="1600" alt="WhatsApp Image 2026-07-31 at 3 41 42 PM" src="https://github.com/user-attachments/assets/c3e10002-2650-40ed-8c1c-8d5089c6d8c6" />
+<img width="738" height="1600" alt="WhatsApp Image 2026-07-31 at 3 41 42 PM" src="https://github.com/user-attachments/assets/8c2d558d-171c-42dd-9b36-e121f2b6f4a5" />
 ---
 
 ## 7.Announcements
 
-<img width="738" height="1600" alt="WhatsApp Image 2026-07-31 at 3 42 24 PM" src="https://github.com/user-attachments/assets/93edabad-33bd-4240-b13d-d2bf6d33cc11" />
+<img width="738" height="1600" alt="WhatsApp Image 2026-07-31 at 3 42 24 PM" src="https://github.com/user-attachments/assets/bb7996f2-5083-4af3-9eaa-430bfb6c31d7" />
 
 
 ---
 
 ## 8. Apply Leave
 
-<img width="738" height="1600" alt="WhatsApp Image 2026-07-25 at 5 42 29 PM" src="https://github.com/user-attachments/assets/e07b7305-e281-4ee3-82ad-5f52f3d237da" />
-
-<img width="738" height="1600" alt="WhatsApp Image 2026-07-25 at 5 43 03 PM" src="https://github.com/user-attachments/assets/27191ce9-7c66-42ee-807c-1bac91306bf7" />
-<img width="738" height="1600" alt="WhatsApp Image 2026-07-25 at 5 43 34 PM" src="https://github.com/user-attachments/assets/6d7eeb8f-29c2-4890-bd86-ebe133924a4d" />
+<img width="738" height="1600" alt="WhatsApp Image 2026-07-25 at 5 42 29 PM" src="https://github.com/user-attachments/assets/700e6b2a-0729-4e4f-befb-de8fd664b273" />
+<img width="738" height="1600" alt="WhatsApp Image 2026-07-25 at 5 43 03 PM" src="https://github.com/user-attachments/assets/93dffe3b-43ae-4b93-98f0-cf9b26277a28" />
+<img width="738" height="1600" alt="WhatsApp Image 2026-07-25 at 5 43 34 PM" src="https://github.com/user-attachments/assets/ff7102ef-0eff-48c0-8acf-a5a487346bf1" />
 
 
 
@@ -360,116 +359,116 @@ Reject        Approve
 
 ## 9. Leave History
 
-<img width="738" height="1600" alt="WhatsApp Image 2026-07-25 at 5 44 01 PM" src="https://github.com/user-attachments/assets/c11e4a6e-9160-4818-8b92-2df6ccea40cc" />
+<img width="738" height="1600" alt="WhatsApp Image 2026-07-25 at 5 44 01 PM" src="https://github.com/user-attachments/assets/a0fb2276-7764-4467-b718-5a3366aeb526" />
 
 
 ---
 
 ## 10. Teacher Dashboard
+<img width="738" height="1600" alt="WhatsApp Image 2026-08-01 at 1 20 09 PM" src="https://github.com/user-attachments/assets/43c81aa7-16d7-469b-8939-d53b36b47350" />
+<img width="738" height="1600" alt="WhatsApp Image 2026-08-01 at 1 20 36 PM" src="https://github.com/user-attachments/assets/6510b5f3-8553-4768-9e34-59bbe9c6868a" />
 
-<img width="738" height="1600" alt="WhatsApp Image 2026-07-31 at 3 45 02 PM" src="https://github.com/user-attachments/assets/15fc2754-e233-4754-8812-d1724131003c" />
-<img width="738" height="1600" alt="WhatsApp Image 2026-07-31 at 3 45 33 PM" src="https://github.com/user-attachments/assets/6622b122-cf17-4ce3-b2cb-62f7e01eee50" />
 ---
 
 ## 11.Teacher Profile
 
-<img width="738" height="1600" alt="WhatsApp Image 2026-07-31 at 3 46 09 PM" src="https://github.com/user-attachments/assets/f96fb8d8-9a25-4c9c-a0a1-2ea0971a7807" />
+<img width="738" height="1600" alt="WhatsApp Image 2026-07-31 at 3 46 09 PM" src="https://github.com/user-attachments/assets/ac6b84dc-2e5b-4ad8-b336-9f18649d652e" />
 
 ---
 
 ## 12.Manage Students
+<img width="738" height="1600" alt="WhatsApp Image 2026-08-01 at 1 21 57 PM" src="https://github.com/user-attachments/assets/5f9b6344-1985-4fb3-9a0e-77323f143627" />
 
-<img width="738" height="1600" alt="WhatsApp Image 2026-07-31 at 3 47 52 PM" src="https://github.com/user-attachments/assets/0ba38881-6cf0-49c5-a1cb-1c3817122a51" />
-<img width="738" height="1600" alt="WhatsApp Image 2026-07-31 at 3 48 27 PM" src="https://github.com/user-attachments/assets/a4cee016-8138-408c-8aef-0465cf2d8db6" />
+<img width="738" height="1600" alt="WhatsApp Image 2026-08-01 at 1 22 21 PM" src="https://github.com/user-attachments/assets/31e385cf-d4ea-4cb1-9ce9-65ff2752469e" />
 
 ---
 
 ## 13. Teacher Pending Requests
 
-<img width="738" height="1600" alt="WhatsApp Image 2026-07-25 at 5 45 37 PM" src="https://github.com/user-attachments/assets/ecf67bf2-318b-48fa-9bc9-3d10d44bf9db" />
+<img width="738" height="1600" alt="WhatsApp Image 2026-07-25 at 5 45 37 PM" src="https://github.com/user-attachments/assets/ba5f6f3a-4e7f-4028-b465-10ba8ecaf6a1" />
 
 ---
 
 ## 14. Teacher Approved Requests
-<img width="738" height="1600" alt="WhatsApp Image 2026-07-25 at 5 46 10 PM" src="https://github.com/user-attachments/assets/38089973-630f-44f9-84e3-d5f3af1b8338" />
+<img width="738" height="1600" alt="WhatsApp Image 2026-08-01 at 1 24 14 PM" src="https://github.com/user-attachments/assets/27762756-7d98-46c1-b58c-09aabf331add" />
 
 
 ---
 
 ## 15. Teacher Rejected Requests
 
-<img width="738" height="1600" alt="WhatsApp Image 2026-07-25 at 5 46 32 PM" src="https://github.com/user-attachments/assets/6990106e-79ff-4a16-94c9-9960bbe2f557" />
+<img width="738" height="1600" alt="WhatsApp Image 2026-08-01 at 1 24 39 PM" src="https://github.com/user-attachments/assets/867d939a-a096-4d4c-abe7-7205f59c20a9" />
 
 ---
 
 ## 16. HOD Dashboard
+<img width="738" height="1600" alt="WhatsApp Image 2026-08-01 at 1 25 52 PM" src="https://github.com/user-attachments/assets/8177082e-fe33-438b-a531-8cc9b9afce6a" />
+<img width="738" height="1600" alt="WhatsApp Image 2026-08-01 at 1 26 12 PM" src="https://github.com/user-attachments/assets/3de5e8e0-8031-4f8c-a79c-7dffa570f50b" />
 
-<img width="738" height="1600" alt="WhatsApp Image 2026-07-31 at 3 50 10 PM" src="https://github.com/user-attachments/assets/53260bd1-37b3-4be3-83ce-2c6e3a649cd8" />
-<img width="738" height="1600" alt="WhatsApp Image 2026-07-31 at 3 50 37 PM" src="https://github.com/user-attachments/assets/1249055c-4565-4e44-aeba-7be6372ef0ed" />
 ---
 
 ## 17.HOD Profile
 
-<img width="738" height="1600" alt="WhatsApp Image 2026-07-31 at 3 53 39 PM" src="https://github.com/user-attachments/assets/4731abf4-35f9-473f-8a6c-3138629d0a6e" />
+<img width="738" height="1600" alt="WhatsApp Image 2026-07-31 at 3 53 39 PM" src="https://github.com/user-attachments/assets/c98b57ac-a9c9-4042-bc98-7d30312fa0e1" />
 
 ---
 
 ## 18.HOD Analytics Dashboard
 
-<img width="738" height="1600" alt="WhatsApp Image 2026-07-31 at 3 54 32 PM" src="https://github.com/user-attachments/assets/5d49e92c-3981-4f10-9b58-e3453281034c" />
+<img width="738" height="1600" alt="WhatsApp Image 2026-07-31 at 3 54 32 PM" src="https://github.com/user-attachments/assets/7f3f64e5-1c36-4347-af64-9591197be40e" />
 
 ---
 
 ## 19. HOD Pending Requests
 
-<img width="738" height="1600" alt="WhatsApp Image 2026-07-25 at 5 47 20 PM" src="https://github.com/user-attachments/assets/c2403b49-efd9-474b-82e6-7457822ac4c2" />
+<img width="738" height="1600" alt="WhatsApp Image 2026-07-25 at 5 47 20 PM" src="https://github.com/user-attachments/assets/7a6b13f3-24a6-424f-95ad-64635ceb9cd3" />
 
 ---
 
 ## 20. HOD Approved Requests
 
-<img width="738" height="1600" alt="WhatsApp Image 2026-07-25 at 5 47 45 PM" src="https://github.com/user-attachments/assets/7929f2dd-bef8-4bcc-a7e0-d6924bc391ba" />
+<img width="738" height="1600" alt="WhatsApp Image 2026-07-25 at 5 47 45 PM" src="https://github.com/user-attachments/assets/844d6655-3d76-4bfa-b8b9-d08bba227ea8" />
 
 ---
 
 ## 21. HOD Rejected Requests
 
-<img width="738" height="1600" alt="WhatsApp Image 2026-07-25 at 5 48 05 PM" src="https://github.com/user-attachments/assets/c63bae61-09bc-4f14-bc38-9d936ebe21c8" />
+<img width="738" height="1600" alt="WhatsApp Image 2026-07-25 at 5 48 05 PM" src="https://github.com/user-attachments/assets/4d4f8a8a-794e-4c11-bdfd-dff9ceee5f35" />
 
 ---
 
 ## 22. Firebase Firestore – LeaveRequests
 
-<img width="1312" height="627" alt="image" src="https://github.com/user-attachments/assets/724e2228-8f8e-4d32-9745-3ae5f1a8811e" />
+<img width="984" height="582" alt="image" src="https://github.com/user-attachments/assets/06bd3ad8-6d33-488a-8222-beae1d38029c" />
 
 
 ---
 
 ## 23. Firebase Firestore – StudentProfiles
 
-<img width="1107" height="530" alt="image" src="https://github.com/user-attachments/assets/30ffcd70-c209-4c31-9433-785cae80b89b" />
+<img width="985" height="553" alt="image" src="https://github.com/user-attachments/assets/d61889aa-ef98-4fab-9931-67cac4c518a3" />
 
 ---
 
 ## 24.Firestore – Attendance
+<img width="989" height="569" alt="image" src="https://github.com/user-attachments/assets/526d34b2-463f-4062-b96c-7cb397587a2c" />
 
-<img width="996" height="548" alt="image" src="https://github.com/user-attachments/assets/1238ade4-f3b0-4a38-8852-41f38ae94158" />
 ---
 
 ## 25.Firestore – Grades
 
-<img width="1007" height="570" alt="image" src="https://github.com/user-attachments/assets/41bd124a-cb10-4760-acdf-044fd55e61c1" />
+<img width="997" height="450" alt="image" src="https://github.com/user-attachments/assets/6f1496ec-6240-4540-9d16-3779d55d51fe" />
 ---
 
 ## 26.Firestore – Courses
 
-<img width="1013" height="573" alt="image" src="https://github.com/user-attachments/assets/7f86ca0f-248a-40ce-8846-f74e30113c56" />
+<img width="1011" height="566" alt="image" src="https://github.com/user-attachments/assets/3d39143f-0e0d-444f-94d1-6b21679d9d82" />
 
 ---
 
 ## 27.Firestore – Announcements
 
-<img width="1009" height="568" alt="image" src="https://github.com/user-attachments/assets/8455374e-40f9-4b11-9017-eab0d0e65347" />
+<img width="992" height="542" alt="image" src="https://github.com/user-attachments/assets/693eae82-e133-4b6a-99c5-155d24caeea6" />
 
 ---
 
@@ -653,7 +652,6 @@ Users
 ```
 ```
 # 🌟 Key Highlights
-```
 - 📱 Cloud-Based Student Management System developed using **Kotlin** and **Firebase**.
 - 🔐 Secure role-based authentication for **Students, Teachers, and HODs** using **Firebase Authentication**.
 - ☁️ Real-time cloud data synchronization with **Firebase Cloud Firestore**.
@@ -667,10 +665,7 @@ Users
 - 🔄 Real-time updates across all user roles without manual refresh.
 - 📂 Well-structured Android project following modular architecture and reusable components.
 - 📈 Scalable Firebase backend for efficient cloud-based data management.
----
-```
 # 🚀 Future Enhancements
-```
 - 🔔 Push Notifications for leave status updates and announcements.
 - 📧 Email Notifications for leave approvals, rejections, and important notices.
 - 📂 Firebase Storage integration for uploading medical certificates and supporting documents.
@@ -687,9 +682,6 @@ Users
 - 🌙 Dark Mode support for improved user experience.
 - 🌐 Multi-language support.
 - ☁️ Offline data caching and synchronization.
-
----
-```
 # 👩‍💻 Author
 
 **Molmuri Pranavi**
